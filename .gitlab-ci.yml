@@ -1,0 +1,55 @@
+
+
+
+image: jakzal/phpqa:php7.4
+
+before_script:
+  - composer install
+
+cache:
+  paths:
+    - vendor/
+
+stages:
+  - SecurityChecker
+  - CodingStandards
+  - UnitTests
+  - deploy
+
+
+phpcs:
+  stage: CodingStandards
+  script:
+    - phpcs -v --standard=PSR12 --ignore=./src/Kernel.php ./src
+  allow_failure: false
+
+phpstan:
+  stage: CodingStandards
+  script:
+    - phpstan analyse ./src
+  allow_failure: false
+
+twig-lint:
+  stage: CodingStandards
+  script:
+    - twig-lint lint ./templates
+  allow_failure: false
+
+deploy:recette:
+  stage: deploy
+  only:
+    - master
+  when: manual
+  script:
+    - echo "oui"
+    - echo $SSH_PRIVATE_KEY
+    - command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client -y )
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - ssh-keyscan -p 24 192.168.1.21  >> ~/.ssh/known_hosts
+    - ssh pi@192.168.1.21 -p 24 'echo "Nous sommes sur la rasp de recette" '
+    - ls
+    - ssh-keyscan -p 26 192.168.1.28  >> ~/.ssh/known_hosts
+    - ssh pi@192.168.1.28 -p 26 'echo "Nous sommes sur la rasp de prod" '
