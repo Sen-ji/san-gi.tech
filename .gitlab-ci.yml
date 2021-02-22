@@ -79,12 +79,26 @@ deploy:recette:
     - chmod 700 ~/.ssh
     - ssh-keyscan -p 24 192.168.1.21  >> ~/.ssh/known_hosts
     - ssh pi@192.168.1.21 -p 24 'echo "Nous sommes sur la rasp de recette"
-      && cd /etc/apache2/sites-available
-      && ls
+    && cd /var/www
+    && ls
       '
+deploy:prod:
+  stage:deploy
+  only:
+    - master
+  when: manual
+  script:
+    - echo "oui"
+    - echo $SSH_PRIVATE_KEY
+    - command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client -y )
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
     - ssh-keyscan -p 26 192.168.1.28  >> ~/.ssh/known_hosts
     - ssh pi@192.168.1.28 -p 26 'echo "Nous sommes sur la rasp de prod"
-      && cd /etc/apache2/sites-available
-      && ls
-      '
+    && cd /var/www
+    && ls
+    '
+
 
