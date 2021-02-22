@@ -78,6 +78,13 @@ deploy:recette:
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
     - ssh-keyscan -p 24 192.168.1.21  >> ~/.ssh/known_hosts
-    - ssh pi@192.168.1.21 -p 24 'echo "Nous sommes sur la rasp de recette" && ls'
+    - ssh pi@192.168.1.21 -p 24 'echo "Nous sommes sur la rasp de recette"
+      && cd /etc/apache2/sites-available
+      && ls
+      '
     - ssh-keyscan -p 26 192.168.1.28  >> ~/.ssh/known_hosts
-    - ssh pi@192.168.1.28 -p 26 'echo "Nous sommes sur la rasp de prod" && ls'
+    - ssh pi@192.168.1.28 -p 26 'echo "Nous sommes sur la rasp de prod"
+      && cd /etc/apache2/sites-available
+      && ls
+      '
+
