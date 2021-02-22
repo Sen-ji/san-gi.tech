@@ -1,3 +1,6 @@
+
+
+
 image: jakzal/phpqa:php7.4
 
 variables:
