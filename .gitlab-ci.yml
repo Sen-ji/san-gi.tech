@@ -1,8 +1,34 @@
-
-
-
 image: jakzal/phpqa:php7.4
 
+variables:
+  SSH_PRIVATE_KEY : '-----BEGIN OPENSSH PRIVATE KEY-----
+                     b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABFwAAAAdzc2gtcn
+                     NhAAAAAwEAAQAAAQEA4Y3el1vU54VKDROO/a2xdzyAta/o8w/3LSzmAJ0pR2NJLsOO3c/H
+                     7+gpbQTs2Fj4Wr8Ipx7VWm0NdpIcuFqmkhPd0rdpGKr4bxaRqMR7iIzNp8K9/ki3P0KaQz
+                     3oBanGYQ6CRDGeDxPLvgcqhQy87s3rXgBsQSObKhpddQTkDgapo1VQviVbHnkt6mVmQTo0
+                     7xhkM0SGbMMiHcj9T1hjNLk8owYCgCI86x4gVhu5FWPOuxhrOQ3nqRyM7I9Dw6x7+dPv7j
+                     PQ2U7cjqR+hnIAGrux8JpXc6OynoR8zg7/aDqgEdXAGa6PqE0S6Pq35Re2olGo+jlrk/ZX
+                     p89UB0ekXwAAA9iTnU+sk51PrAAAAAdzc2gtcnNhAAABAQDhjd6XW9TnhUoNE479rbF3PI
+                     C1r+jzD/ctLOYAnSlHY0kuw47dz8fv6CltBOzYWPhavwinHtVabQ12khy4WqaSE93St2kY
+                     qvhvFpGoxHuIjM2nwr3+SLc/QppDPegFqcZhDoJEMZ4PE8u+ByqFDLzuzeteAGxBI5sqGl
+                     11BOQOBqmjVVC+JVseeS3qZWZBOjTvGGQzRIZswyIdyP1PWGM0uTyjBgKAIjzrHiBWG7kV
+                     Y867GGs5DeepHIzsj0PDrHv50+/uM9DZTtyOpH6GcgAau7Hwmldzo7KehHzODv9oOqAR1c
+                     AZro+oTRLo+rflF7aiUaj6OWuT9lenz1QHR6RfAAAAAwEAAQAAAQA8wU8k7BqEJnYU4aDR
+                     mhjEamqtBe40kqdc5swpfCvjS84pp4lzHAXaDGokMIBvoj97ihuVkIudqORIfQD5c4mMrY
+                     dBvB+2Ak+a9LRVhl9UH8FBoAY3WXTquFD/LcyywdFq0VKrdcYCf62QyTNd1VmK5bKxhmGi
+                     hinEhIeJ/sBDOmyNux9B1nfa0mJ/rfuwk3AkCMBtOqy1WNU3BLE9G53ssJu9HEX412bYju
+                     mYK35w0vS60m7fttkoNaY9VDq5JW0aeoKDHMEIyzpP6oUvyZ2/5qpLAkSAMIdrIspoZIFL
+                     tefSrVJtKCvbZbadh1XkQVFv8OTMjTKwUfq3Vn2kvBmhAAAAgGj+a+AY24JyKIn+GvaPXM
+                     ZS8oCDfHmlHK3Wqndx5twH0SSefU3L8RyzyGM72Tm+JIh7caR4E8/0c5YGSbi6IlSD8wir
+                     GMw1TIePQI32/3opDi7y4k0HU1mqOWdd3ywF3e0+OojRs5ZGKA99ffNCbmkmFX8NYer4US
+                     8uvYeWZnxJAAAAgQD+EN0ie+bzt1EaXHXBToQc8KM9L5kfAJ2eolq6NS1amVe4JUjMgig3
+                     CnpMK5dTjEfNxo2Dh/Hpkc3Xe04DCC/WKdR4cOCdEDLQAmX0JzvJLfCSGuRVvVSAfTK+w+
+                     eQiliAJ0Dj79TwNuox0vzdLGh0IaHJUBDiVNnP9CpI0Wgd8QAAAIEA40Vw0F/yiPhq3fC+
+                     iTK0sO/8hRZyqM+IruNdyMwMkJ1f264SyOS89eHy2MbFynLqeNv1r6PqsDczHq6iV2/Mx+
+                     wMy0WXPhah3rSiWtSitYhVZWPdI72/k2m5Q0AaGJBAmJd78cdYZbBFr90Dy0S5rTBFEmKt
+                     2PhGaSRSEJoR108AAAAiZGFtaWVuLmRldHVyY2tAZXR1ZGlhbnQudW5pdi1sci5mcgE=
+                     -----END OPENSSH PRIVATE KEY-----
+'
 before_script:
   - composer install
 
