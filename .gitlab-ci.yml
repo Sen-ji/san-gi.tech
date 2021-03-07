@@ -33,6 +33,10 @@ variables:
                      -----END OPENSSH PRIVATE KEY-----
 '
   Domain: 'san-gi.tech'
+  commandssh: 'echo "Nous sommes sur la rasp de recette"
+  && cd /var/www
+  && ls
+  && echo "$Domain"'
 before_script:
   - composer install
 
@@ -72,10 +76,8 @@ deploy:recette:
   script:
     - echo "oui"
     - echo $SSH_PRIVATE_KEY
-    - commandssh='echo "Nous sommes sur la rasp de recette"
-      && cd /var/www
-      && ls
-      && echo "$SSH_PRIVATE_KEY"'
+    - echo $Domain
+    - echo $commandssh
     - command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client -y )
     - eval $(ssh-agent -s)
     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
