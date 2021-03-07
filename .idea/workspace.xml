@@ -20,8 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="983f784e-ae66-4101-9007-b88d84e7eebe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/apache/web-ssl.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/apache/web.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -171,7 +169,7 @@
       <workItem from="1613509253639" duration="2020000" />
       <workItem from="1613869374718" duration="4580000" />
       <workItem from="1614015117299" duration="4320000" />
-      <workItem from="1615055311129" duration="6556000" />
+      <workItem from="1615055311129" duration="8069000" />
     </task>
     <servers />
   </component>

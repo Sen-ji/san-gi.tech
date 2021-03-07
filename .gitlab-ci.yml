@@ -78,9 +78,13 @@ deploy:recette:
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
     - ssh-keyscan -p 24 192.168.1.21  >> ~/.ssh/known_hosts
+    -
+    -
+    -
     - ssh pi@192.168.1.21 -p 24 'echo "Nous sommes sur la rasp de recette"
       && cd /var/www
-      && echo $Domain
+      && ls
+      && echo $SSH_PRIVATE_KEY
       '
 deploy:prod:
   stage: deploy
