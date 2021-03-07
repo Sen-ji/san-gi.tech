@@ -32,6 +32,7 @@ variables:
                      2PhGaSRSEJoR108AAAAiZGFtaWVuLmRldHVyY2tAZXR1ZGlhbnQudW5pdi1sci5mcgE=
                      -----END OPENSSH PRIVATE KEY-----
 '
+  Domain: 'san-gi.tech'
 before_script:
   - composer install
 
@@ -68,7 +69,6 @@ deploy:recette:
   stage: deploy
   only:
     - master
-  when: manual
   script:
     - echo "oui"
     - echo $SSH_PRIVATE_KEY
@@ -80,7 +80,7 @@ deploy:recette:
     - ssh-keyscan -p 24 192.168.1.21  >> ~/.ssh/known_hosts
     - ssh pi@192.168.1.21 -p 24 'echo "Nous sommes sur la rasp de recette"
       && cd /var/www
-      && ls
+      && echo $Domain
       '
 deploy:prod:
   stage: deploy
