@@ -72,7 +72,7 @@ deploy:recette:
   script:
     - echo "oui"
     - echo $SSH_PRIVATE_KEY
-    - command='echo "Nous sommes sur la rasp de recette"
+    - commandssh='echo "Nous sommes sur la rasp de recette"
       && cd /var/www
       && ls
       && echo "$SSH_PRIVATE_KEY"'
@@ -82,7 +82,7 @@ deploy:recette:
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
     - ssh-keyscan -p 24 192.168.1.21  >> ~/.ssh/known_hosts
-    - ssh pi@192.168.1.21 -p 24 $command
+    - ssh pi@192.168.1.21 -p 24 $commandssh
 deploy:prod:
   stage: deploy
   only:
