@@ -72,7 +72,7 @@ deploy:recette:
   script:
     - echo "oui"
     - echo $SSH_PRIVATE_KEY
-   - command='echo "Nous sommes sur la rasp de recette"
+    - command='echo "Nous sommes sur la rasp de recette"
       && cd /var/www
       && ls
       && echo "$SSH_PRIVATE_KEY"'
