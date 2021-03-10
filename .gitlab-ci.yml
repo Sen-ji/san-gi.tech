@@ -36,8 +36,8 @@ variables:
   commandssh: 'echo "Nous sommes sur la rasp de recette"
   && cd /var/www
   && sudo git clone https://gitlab.san-gi.tech:444/Sangi/san-gi.tech.git
-  && cd san-gi.tech
-  && cd config/apache
+  && cd /etc/apache2/sites-available
+  && sudo ln -s /var/www/$Domain/config/apache/web.conf  $Domain.conf --force
   && sudo a2dissite web.conf
   && sudo a2ensite web.conf
   && cd ../..
