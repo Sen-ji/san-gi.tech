@@ -40,7 +40,6 @@ variables:
   && cd $Domain
   && sudo git pull
   && cd /etc/apache2/sites-available
-  && sudo rm $Domain.conf
   && sudo ln -s /var/www/$Domain/config/apache/test.conf  $Domain.conf --force
   && sudo a2dissite $Domain.conf
   && sudo a2ensite $Domain.conf
