@@ -39,7 +39,7 @@ variables:
   && sudo git clone https://gitlab.san-gi.tech:444/Sangi/$Domain.git
   && cd $Domain
   && sudo git pull
-  && sudo cmod 777 -R ./
+  && sudo chmod 777 -R ./
   && composer install
   && cd /etc/apache2/sites-available
   && sudo ln -s /var/www/$Domain/config/apache/test.conf  $Domain.conf --force
