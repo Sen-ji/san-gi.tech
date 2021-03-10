@@ -35,11 +35,11 @@ variables:
   Domain: 'san-gi.tech'
   commandssh: 'echo "Nous sommes sur la rasp de recette"
   && cd /var/www
-  && sudo git clone https://gitlab.san-gi.tech:444/Sangi/san-gi.tech.git
+  && sudo git clone https://gitlab.san-gi.tech:444/Sangi/san-gi.tech.git --force
   && cd /etc/apache2/sites-available
   && sudo ln -s /var/www/$Domain/config/apache/web.conf  $Domain.conf --force
-  && sudo a2dissite web.conf
-  && sudo a2ensite web.conf
+  && sudo a2dissite $Domain.conf
+  && sudo a2ensite $Domain.conf
   && cd ../..
   && echo "$Domain"'
 before_script:
