@@ -36,7 +36,7 @@ variables:
   commandssh: 'echo "Nous sommes sur la rasp de recette"
   && cd /var/www
   && sudo rm -rf $Domain
-  && sudo git clone https://gitlab.san-gi.tech:444/Sangi/$Domain.git
+  && sudo git clone https://gitlab.san-gi.tech:444/Sangi/san-gi.tech.git
   && cd $Domain
   && sudo git pull
   && sudo chmod 777 -R ./
