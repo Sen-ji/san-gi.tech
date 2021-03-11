@@ -32,7 +32,7 @@ variables:
                      2PhGaSRSEJoR108AAAAiZGFtaWVuLmRldHVyY2tAZXR1ZGlhbnQudW5pdi1sci5mcgE=
                      -----END OPENSSH PRIVATE KEY-----
 '
-  Domain: 'san-gi.tech'
+  Domain: 'test.san-gi.tech'
   commandssh: 'echo "Nous sommes sur la rasp de recette"
   && cd /var/www
   && sudo rm -rf $Domain
