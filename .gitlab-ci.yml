@@ -37,7 +37,7 @@ variables:
   && cd /var/www
   && sudo rm -rf san-gi.tech
   && sudo git clone https://gitlab.san-gi.tech:444/Sangi/san-gi.tech.git
-  && cd $Domain
+  && cd san-gi.tech
   && sudo git pull
   && sudo chmod 777 -R ./
   && composer install
