@@ -43,7 +43,6 @@ variables:
   && composer install
   && cd /etc/apache2/sites-available
   && sudo ln -s /var/www/$Domain/config/apache/test.conf  $Domain.conf --force
-  && sudo a2dissite $Domain.conf
   && sudo a2ensite $Domain.conf
   && sudo service apache2 reload
   && cd ../..
