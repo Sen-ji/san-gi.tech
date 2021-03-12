@@ -18,7 +18,7 @@ class IndexController extends AbstractController
         ]);
     }
     /**
-     * @Route("/test", name="index")
+     * @Route("/test", name="test")
      */
     public function test(): Response
     {
