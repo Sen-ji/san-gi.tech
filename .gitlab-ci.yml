@@ -42,13 +42,13 @@ variables:
   && sudo chmod 777 -R ./
   && composer install
   && cd /etc/apache2/sites-available
-  && sudo ln -s /var/www/san-gi.tech/config/apache/test.conf  $Domain.conf --force
-  && sudo a2ensite $Domain.conf
+  && sudo ln -s /var/www/san-gi.tech/config/apache/test.conf  $DomainTest.conf --force
+  && sudo a2ensite $DomainTest.conf
   && sudo service apache2 reload
   && cd ../..
-  && echo "$Domain"'
+  && echo "$DomainTest"'
   DomainProd: 'san-gi.tech'
-  commandsshProd: 'echo "Nous sommes sur la rasp de recette"
+  commandsshProd: 'echo "Nous sommes sur la rasp de prod"
   && cd /var/www
   && sudo rm -rf san-gi.tech
   && sudo git clone https://gitlab.san-gi.tech:444/Sangi/san-gi.tech.git
@@ -57,11 +57,11 @@ variables:
   && sudo chmod 777 -R ./
   && composer install
   && cd /etc/apache2/sites-available
-  && sudo ln -s /var/www/san-gi.tech/config/apache/test.conf  $Domain.conf --force
-  && sudo a2ensite $Domain.conf
+  && sudo ln -s /var/www/$DomainProd/config/apache/test.conf  $DomainProd.conf --force
+  && sudo a2ensite $DomainProd.conf
   && sudo service apache2 reload
   && cd ../..
-  && echo "$Domain"'
+  && echo "$DomainProd"'
 
 before_script:
   - composer install
@@ -77,6 +77,23 @@ stages:
   - deploy
 
 
+#phpcs:
+#  stage: CodingStandards
+#  script:
+#    - phpcs -v --standard=PSR12 --ignore=./src/Kernel.php ./src
+#  allow_failure: false
+
+#phpstan:
+#  stage: CodingStandards
+#  script:
+#    - phpstan analyse ./src
+#  allow_failure: false
+
+#twig-lint:
+#  stage: CodingStandards
+#  script:
+#    - twig-lint lint ./templates
+#  allow_failure: false
 
 deploy:recette:
   stage: deploy
@@ -107,9 +124,6 @@ deploy:prod:
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
     - ssh-keyscan -p 26 192.168.1.28  >> ~/.ssh/known_hosts
-    - ssh pi@192.168.1.28 -p 26 'echo "Nous sommes sur la rasp de prod"
-      && cd /var/www
-      && ls
-      '
+    - ssh pi@192.168.1.28 -p 26 'echo $commandsshProd'
 
 
