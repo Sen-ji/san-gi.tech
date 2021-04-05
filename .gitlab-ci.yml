@@ -32,8 +32,8 @@ variables:
                      2PhGaSRSEJoR108AAAAiZGFtaWVuLmRldHVyY2tAZXR1ZGlhbnQudW5pdi1sci5mcgE=
                      -----END OPENSSH PRIVATE KEY-----
 '
-  Domain: 'test.san-gi.tech'
-  commandssh: 'echo "Nous sommes sur la rasp de recette"
+  DomainTest: 'test.san-gi.tech'
+  commandsshTest: 'echo "Nous sommes sur la rasp de recette"
   && cd /var/www
   && sudo rm -rf san-gi.tech
   && sudo git clone https://gitlab.san-gi.tech:444/Sangi/san-gi.tech.git
@@ -47,6 +47,22 @@ variables:
   && sudo service apache2 reload
   && cd ../..
   && echo "$Domain"'
+  DomainProd: 'san-gi.tech'
+  commandsshProd: 'echo "Nous sommes sur la rasp de recette"
+  && cd /var/www
+  && sudo rm -rf san-gi.tech
+  && sudo git clone https://gitlab.san-gi.tech:444/Sangi/san-gi.tech.git
+  && cd san-gi.tech
+  && sudo git pull
+  && sudo chmod 777 -R ./
+  && composer install
+  && cd /etc/apache2/sites-available
+  && sudo ln -s /var/www/san-gi.tech/config/apache/test.conf  $Domain.conf --force
+  && sudo a2ensite $Domain.conf
+  && sudo service apache2 reload
+  && cd ../..
+  && echo "$Domain"'
+
 before_script:
   - composer install
 
@@ -55,9 +71,9 @@ cache:
     - vendor/
 
 stages:
-  - SecurityChecker
-  - CodingStandards
-  - UnitTests
+  #- SecurityChecker
+  #- CodingStandards
+  #- UnitTests
   - deploy
 
 
@@ -85,16 +101,15 @@ deploy:recette:
     - master
   script:
     - echo "oui"
-    - echo $SSH_PRIVATE_KEY
-    - echo $Domain
-    - echo $commandssh
+    - echo $DomainTest
+    - echo $commandsshTest
     - command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client -y )
     - eval $(ssh-agent -s)
     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
     - ssh-keyscan -p 24 192.168.1.21  >> ~/.ssh/known_hosts
-    - ssh pi@192.168.1.21 -p 24 $commandssh
+    - ssh pi@192.168.1.21 -p 24 $commandsshTest
 deploy:prod:
   stage: deploy
   only:
@@ -102,7 +117,7 @@ deploy:prod:
   when: manual
   script:
     - echo "oui"
-    - echo $SSH_PRIVATE_KEY
+    - echo $DomainProd
     - command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client -y )
     - eval $(ssh-agent -s)
     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
