@@ -35,10 +35,9 @@ variables:
   DomainTest: 'test.san-gi.tech'
   commandsshTest: 'echo "Nous sommes sur la rasp de recette"
   && cd /var/www
-  && sudo rm -rf san-gi.tech
-  && sudo git clone https://gitlab.san-gi.tech:444/Sangi/san-gi.tech.git
+  && sudo rm -rf $DomainTest
+  && sudo git clone https://gitlab.san-gi.tech:444/Sangi/$DomainProd.git
   && cd san-gi.tech
-  && sudo git pull
   && sudo chmod 777 -R ./
   && composer install
   && cd /etc/apache2/sites-available
@@ -50,10 +49,9 @@ variables:
   DomainProd: 'san-gi.tech'
   commandsshProd: 'echo "Nous sommes sur la rasp de prod"
   && cd /var/www
-  && sudo rm -rf san-gi.tech
-  && sudo git clone https://gitlab.san-gi.tech:444/Sangi/san-gi.tech.git
+  && sudo rm -rf $DomainProd
+  && sudo git clone https://gitlab.san-gi.tech:444/Sangi/$DomainProd.git
   && cd san-gi.tech
-  && sudo git pull
   && sudo chmod 777 -R ./
   && composer install
   && cd /etc/apache2/sites-available
