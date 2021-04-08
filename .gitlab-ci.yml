@@ -97,7 +97,6 @@ deploy:recette:
   only:
     - master
   script:
-    - echo "oui"
     - echo $DomainTest
     - echo $commandsshTest
     - command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client -y )
@@ -113,7 +112,6 @@ deploy:prod:
     - master
   when: manual
   script:
-    - echo "oui"
     - echo $DomainProd
     - command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client -y )
     - eval $(ssh-agent -s)
