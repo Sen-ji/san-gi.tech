@@ -34,9 +34,9 @@ variables:
   DomainTest: 'test.san-gi.tech'
   commandsshTest: 'echo "Nous sommes sur la rasp de recette"
   && cd /var/www
-  && sudo rm -rf $DomainTest
+  && sudo rm -rf $DomainProd
   && sudo git clone https://gitlab.san-gi.tech:444/Sangi/$DomainProd.git
-  && cd $DomainTest
+  && cd $DomainProd
   && sudo chmod 777 -R ./
   && composer install
   && cd /etc/apache2/sites-available
