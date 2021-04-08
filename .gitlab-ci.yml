@@ -18,7 +18,7 @@ variables:
   && cd ../..
   && echo "$DomainTest"
   && cd /var/www/$DomainProd
-  && php app/console d:d:c --env=recette
+  && php bin/console d:d:c --env=recette
   && php bin/console d:m:m --env=recette'
   DomainProd: 'san-gi.tech'
   commandsshProd: 'echo "Nous sommes sur la rasp de prod"
