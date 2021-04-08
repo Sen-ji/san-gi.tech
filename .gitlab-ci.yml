@@ -20,6 +20,7 @@ variables:
   && cd /var/www/$DomainProd
   && php bin/console d:d:c --if-not-exists --env=recette
   && php bin/console d:m:m --no-interaction --env=recette
+  && yarn
   '
   DomainProd: 'san-gi.tech'
   commandsshProd: 'echo "Nous sommes sur la rasp de prod"
@@ -38,6 +39,7 @@ variables:
   && cd /var/www/$DomainProd
   && php bin/console d:d:c --if-not-exists --env=prod
   && php bin/console d:m:m --no-interaction --env=prod
+  && yarn
 '
 
 before_script:
