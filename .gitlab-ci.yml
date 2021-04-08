@@ -31,7 +31,7 @@ variables:
   && sudo chmod 777 -R ./
   && composer install
   && cd /etc/apache2/sites-available
-  && sudo ln -s /var/www/$DomainProd/config/apache/test.conf  $DomainProd.conf --force
+  && sudo ln -s /var/www/$DomainProd/config/apache/web.conf  $DomainProd.conf --force
   && sudo a2ensite $DomainProd.conf
   && sudo service apache2 reload
   && cd ../..
