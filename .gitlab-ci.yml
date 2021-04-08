@@ -30,7 +30,6 @@ variables:
                      XK/vGO53G4embxdSBjx9xpD131YgQK9mZFB9pwC3Ki73H19ru8IesrQDIP3QwdWZ8mP2fe
                      SSjwkrfvIM2Vy9gDAAAADnBpQHJhc3BiZXJyeXBpAQIDBA==
                      -----END OPENSSH PRIVATE KEY-----
-
 '
   DomainTest: 'test.san-gi.tech'
   commandsshTest: 'echo "Nous sommes sur la rasp de recette"
