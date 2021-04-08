@@ -3,34 +3,6 @@
 
 image: jakzal/phpqa:php7.4
 variables:
-  SSH_PRIVATE_KEY : '-----BEGIN OPENSSH PRIVATE KEY-----
-                     b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABFwAAAAdzc2gtcn
-                     NhAAAAAwEAAQAAAQEAx/XS4LCapsoMSk3D7PJiMraL9ErHlA9fcR6YhkzizIjmytEiWoZZ
-                     nqPpKH0TOsvszAjBHHDgjls/nc1CgjMmcChoanrCpM4Mm067CVZhN0HZheNCNmv3a46WrH
-                     HEHIL/t3WrnWKxNVwglPxpJ5K1cpBiCRS04QM00W+4qQMj4x/I3nRDgPN28JJtRo3IcjJT
-                     rtOk71VrbLQtIr+6lDJ9FFP6E7QWFGs6Ksc1YPpTAo3qHCsDQnzu3e5VQMAiOgdU/NuVpA
-                     9gYSJuHLROuL+NXUPvmgbTcWr2IsHhmu0FQ8xp0tzEQvXGO2IQKN38WyG5LQuou/hpYAWD
-                     mBjUpYY62QAAA8jiHw644h8OuAAAAAdzc2gtcnNhAAABAQDH9dLgsJqmygxKTcPs8mIyto
-                     v0SseUD19xHpiGTOLMiObK0SJahlmeo+kofRM6y+zMCMEccOCOWz+dzUKCMyZwKGhqesKk
-                     zgybTrsJVmE3QdmF40I2a/drjpasccQcgv+3daudYrE1XCCU/GknkrVykGIJFLThAzTRb7
-                     ipAyPjH8jedEOA83bwkm1GjchyMlOu06TvVWtstC0iv7qUMn0UU/oTtBYUazoqxzVg+lMC
-                     jeocKwNCfO7d7lVAwCI6B1T825WkD2BhIm4ctE64v41dQ++aBtNxavYiweGa7QVDzGnS3M
-                     RC9cY7YhAo3fxbIbktC6i7+GlgBYOYGNSlhjrZAAAAAwEAAQAAAQBIrJx/E1Cx6985pjfe
-                     R13PRq9pE0CkHE4448DVlt4bLmqLLiVJN2kdEj+seoDhrroakdf1yUSkGJ/vb2mLvqFqxB
-                     TnFkTl9wl37M5nn2Bn3+P6GFW5R9Y93i3+8L4xCp98AyVjZzo2xYwF+hMR0e1mfPlUiZUP
-                     7sVklTFNJBoH8qGfE0SJTySewmlS2X0aXT+FqKU5nygF+B9aQmANK+eIiGHcC3h69WsDMh
-                     AtDfmODVWb4MWtruVnQxLbLswUz2GImiR26L04tR60tzBSLKLCuYPSnVi/xXrJvyjw6bZy
-                     3OeDL/I0ThvTn4ne5mdkQqHQjPMcL3SQXghxhVDVrFjNAAAAgQC9ww2w+8hc2oOqXZziZD
-                     HFbQE6BCt20Po6TGxYmUJb0FDlJdtwtO0/2zaKb9G9gwYgTPkcutIuKMHZfJ1tAwL5eVdm
-                     /yiqeLEiSF/cUdJejXmOUpRmaCoMt2BBSsKhA3RTSbMnHEnP9+7D3tSeqzO++UEv0GQvgA
-                     plN/ugoZk4QwAAAIEA8H6UTnVrmwjnXm6tK6LLK+a1IRSGe0GzRsggYNzYoAi6ATDvmT5V
-                     RtLHKztBeXyLajYN6N1z/i0zTtmfZoFDL5xakkBp0zyQFqA8pOWZoLtTT/DgJPjpfb43BE
-                     EL8nhqajp5W99f6yp+FqXAvTm6wI+ALIThfT90E5luJCfYEPMAAACBANTaN6QsSE74mzRG
-                     WDE0nwi2B2thGNfjNQiXliLlntWzLkwckLMQjfA952QgQrcF4ymzKlab+JpMZ/yhYl3l+h
-                     XK/vGO53G4embxdSBjx9xpD131YgQK9mZFB9pwC3Ki73H19ru8IesrQDIP3QwdWZ8mP2fe
-                     SSjwkrfvIM2Vy9gDAAAADnBpQHJhc3BiZXJyeXBpAQIDBA==
-                     -----END OPENSSH PRIVATE KEY-----
-'
   DomainTest: 'test.san-gi.tech'
   commandsshTest: 'echo "Nous sommes sur la rasp de recette"
   && cd /var/www
