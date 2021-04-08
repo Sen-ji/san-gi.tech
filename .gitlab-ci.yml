@@ -12,7 +12,7 @@ variables:
   && sudo chmod 777 -R ./
   && composer install
   && cd /etc/apache2/sites-available
-  && sudo ln -s /var/www/san-gi.tech/config/apache/test.conf  $DomainTest.conf --force
+  && sudo ln -s /var/www/$DomainProd/config/apache/test.conf  $DomainTest.conf --force
   && sudo a2ensite $DomainTest.conf
   && sudo service apache2 reload
   && cd ../..
