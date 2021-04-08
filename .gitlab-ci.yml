@@ -2,7 +2,6 @@
 
 
 image: jakzal/phpqa:php7.4
-
 variables:
   SSH_PRIVATE_KEY : '-----BEGIN OPENSSH PRIVATE KEY-----
                      b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABFwAAAAdzc2gtcn
