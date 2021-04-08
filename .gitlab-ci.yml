@@ -5,31 +5,32 @@ image: jakzal/phpqa:php7.4
 variables:
   SSH_PRIVATE_KEY : '-----BEGIN OPENSSH PRIVATE KEY-----
                      b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABFwAAAAdzc2gtcn
-                     NhAAAAAwEAAQAAAQEA4Y3el1vU54VKDROO/a2xdzyAta/o8w/3LSzmAJ0pR2NJLsOO3c/H
-                     7+gpbQTs2Fj4Wr8Ipx7VWm0NdpIcuFqmkhPd0rdpGKr4bxaRqMR7iIzNp8K9/ki3P0KaQz
-                     3oBanGYQ6CRDGeDxPLvgcqhQy87s3rXgBsQSObKhpddQTkDgapo1VQviVbHnkt6mVmQTo0
-                     7xhkM0SGbMMiHcj9T1hjNLk8owYCgCI86x4gVhu5FWPOuxhrOQ3nqRyM7I9Dw6x7+dPv7j
-                     PQ2U7cjqR+hnIAGrux8JpXc6OynoR8zg7/aDqgEdXAGa6PqE0S6Pq35Re2olGo+jlrk/ZX
-                     p89UB0ekXwAAA9iTnU+sk51PrAAAAAdzc2gtcnNhAAABAQDhjd6XW9TnhUoNE479rbF3PI
-                     C1r+jzD/ctLOYAnSlHY0kuw47dz8fv6CltBOzYWPhavwinHtVabQ12khy4WqaSE93St2kY
-                     qvhvFpGoxHuIjM2nwr3+SLc/QppDPegFqcZhDoJEMZ4PE8u+ByqFDLzuzeteAGxBI5sqGl
-                     11BOQOBqmjVVC+JVseeS3qZWZBOjTvGGQzRIZswyIdyP1PWGM0uTyjBgKAIjzrHiBWG7kV
-                     Y867GGs5DeepHIzsj0PDrHv50+/uM9DZTtyOpH6GcgAau7Hwmldzo7KehHzODv9oOqAR1c
-                     AZro+oTRLo+rflF7aiUaj6OWuT9lenz1QHR6RfAAAAAwEAAQAAAQA8wU8k7BqEJnYU4aDR
-                     mhjEamqtBe40kqdc5swpfCvjS84pp4lzHAXaDGokMIBvoj97ihuVkIudqORIfQD5c4mMrY
-                     dBvB+2Ak+a9LRVhl9UH8FBoAY3WXTquFD/LcyywdFq0VKrdcYCf62QyTNd1VmK5bKxhmGi
-                     hinEhIeJ/sBDOmyNux9B1nfa0mJ/rfuwk3AkCMBtOqy1WNU3BLE9G53ssJu9HEX412bYju
-                     mYK35w0vS60m7fttkoNaY9VDq5JW0aeoKDHMEIyzpP6oUvyZ2/5qpLAkSAMIdrIspoZIFL
-                     tefSrVJtKCvbZbadh1XkQVFv8OTMjTKwUfq3Vn2kvBmhAAAAgGj+a+AY24JyKIn+GvaPXM
-                     ZS8oCDfHmlHK3Wqndx5twH0SSefU3L8RyzyGM72Tm+JIh7caR4E8/0c5YGSbi6IlSD8wir
-                     GMw1TIePQI32/3opDi7y4k0HU1mqOWdd3ywF3e0+OojRs5ZGKA99ffNCbmkmFX8NYer4US
-                     8uvYeWZnxJAAAAgQD+EN0ie+bzt1EaXHXBToQc8KM9L5kfAJ2eolq6NS1amVe4JUjMgig3
-                     CnpMK5dTjEfNxo2Dh/Hpkc3Xe04DCC/WKdR4cOCdEDLQAmX0JzvJLfCSGuRVvVSAfTK+w+
-                     eQiliAJ0Dj79TwNuox0vzdLGh0IaHJUBDiVNnP9CpI0Wgd8QAAAIEA40Vw0F/yiPhq3fC+
-                     iTK0sO/8hRZyqM+IruNdyMwMkJ1f264SyOS89eHy2MbFynLqeNv1r6PqsDczHq6iV2/Mx+
-                     wMy0WXPhah3rSiWtSitYhVZWPdI72/k2m5Q0AaGJBAmJd78cdYZbBFr90Dy0S5rTBFEmKt
-                     2PhGaSRSEJoR108AAAAiZGFtaWVuLmRldHVyY2tAZXR1ZGlhbnQudW5pdi1sci5mcgE=
+                     NhAAAAAwEAAQAAAQEAx/XS4LCapsoMSk3D7PJiMraL9ErHlA9fcR6YhkzizIjmytEiWoZZ
+                     nqPpKH0TOsvszAjBHHDgjls/nc1CgjMmcChoanrCpM4Mm067CVZhN0HZheNCNmv3a46WrH
+                     HEHIL/t3WrnWKxNVwglPxpJ5K1cpBiCRS04QM00W+4qQMj4x/I3nRDgPN28JJtRo3IcjJT
+                     rtOk71VrbLQtIr+6lDJ9FFP6E7QWFGs6Ksc1YPpTAo3qHCsDQnzu3e5VQMAiOgdU/NuVpA
+                     9gYSJuHLROuL+NXUPvmgbTcWr2IsHhmu0FQ8xp0tzEQvXGO2IQKN38WyG5LQuou/hpYAWD
+                     mBjUpYY62QAAA8jiHw644h8OuAAAAAdzc2gtcnNhAAABAQDH9dLgsJqmygxKTcPs8mIyto
+                     v0SseUD19xHpiGTOLMiObK0SJahlmeo+kofRM6y+zMCMEccOCOWz+dzUKCMyZwKGhqesKk
+                     zgybTrsJVmE3QdmF40I2a/drjpasccQcgv+3daudYrE1XCCU/GknkrVykGIJFLThAzTRb7
+                     ipAyPjH8jedEOA83bwkm1GjchyMlOu06TvVWtstC0iv7qUMn0UU/oTtBYUazoqxzVg+lMC
+                     jeocKwNCfO7d7lVAwCI6B1T825WkD2BhIm4ctE64v41dQ++aBtNxavYiweGa7QVDzGnS3M
+                     RC9cY7YhAo3fxbIbktC6i7+GlgBYOYGNSlhjrZAAAAAwEAAQAAAQBIrJx/E1Cx6985pjfe
+                     R13PRq9pE0CkHE4448DVlt4bLmqLLiVJN2kdEj+seoDhrroakdf1yUSkGJ/vb2mLvqFqxB
+                     TnFkTl9wl37M5nn2Bn3+P6GFW5R9Y93i3+8L4xCp98AyVjZzo2xYwF+hMR0e1mfPlUiZUP
+                     7sVklTFNJBoH8qGfE0SJTySewmlS2X0aXT+FqKU5nygF+B9aQmANK+eIiGHcC3h69WsDMh
+                     AtDfmODVWb4MWtruVnQxLbLswUz2GImiR26L04tR60tzBSLKLCuYPSnVi/xXrJvyjw6bZy
+                     3OeDL/I0ThvTn4ne5mdkQqHQjPMcL3SQXghxhVDVrFjNAAAAgQC9ww2w+8hc2oOqXZziZD
+                     HFbQE6BCt20Po6TGxYmUJb0FDlJdtwtO0/2zaKb9G9gwYgTPkcutIuKMHZfJ1tAwL5eVdm
+                     /yiqeLEiSF/cUdJejXmOUpRmaCoMt2BBSsKhA3RTSbMnHEnP9+7D3tSeqzO++UEv0GQvgA
+                     plN/ugoZk4QwAAAIEA8H6UTnVrmwjnXm6tK6LLK+a1IRSGe0GzRsggYNzYoAi6ATDvmT5V
+                     RtLHKztBeXyLajYN6N1z/i0zTtmfZoFDL5xakkBp0zyQFqA8pOWZoLtTT/DgJPjpfb43BE
+                     EL8nhqajp5W99f6yp+FqXAvTm6wI+ALIThfT90E5luJCfYEPMAAACBANTaN6QsSE74mzRG
+                     WDE0nwi2B2thGNfjNQiXliLlntWzLkwckLMQjfA952QgQrcF4ymzKlab+JpMZ/yhYl3l+h
+                     XK/vGO53G4embxdSBjx9xpD131YgQK9mZFB9pwC3Ki73H19ru8IesrQDIP3QwdWZ8mP2fe
+                     SSjwkrfvIM2Vy9gDAAAADnBpQHJhc3BiZXJyeXBpAQIDBA==
                      -----END OPENSSH PRIVATE KEY-----
+
 '
   DomainTest: 'test.san-gi.tech'
   commandsshTest: 'echo "Nous sommes sur la rasp de recette"
