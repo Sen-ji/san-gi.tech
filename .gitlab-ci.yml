@@ -36,8 +36,8 @@ variables:
   && cd ../..
   && echo "$DomainProd"
   && cd /var/www/$DomainProd
-  && php bin/console d:d:c --if-not-exists --env=recette
-  && php bin/console d:m:m --no-interaction --env=recette
+  && php bin/console d:d:c --if-not-exists --env=prod
+  && php bin/console d:m:m --no-interaction --env=prod
 '
 
 before_script:
