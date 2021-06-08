@@ -1,6 +1,3 @@
-
-
-
 image: jakzal/phpqa:php7.4
 variables:
   DomainTest: 'test.san-gi.tech'
@@ -21,6 +18,8 @@ variables:
   && php bin/console d:d:c --if-not-exists --env=recette
   && php bin/console d:m:m --no-interaction --env=recette
   && yarn
+  aa yarn encore production
+  && composer dump-env recette
   '
   DomainProd: 'san-gi.tech'
   commandsshProd: 'echo "Nous sommes sur la rasp de prod"
@@ -40,10 +39,12 @@ variables:
   && php bin/console d:d:c --if-not-exists --env=prod
   && php bin/console d:m:m --no-interaction --env=prod
   && yarn
+  && yarn encore production
+  && composer dump-env prod
 '
 
 before_script:
-  #- composer install
+#- composer install
 
 cache:
   paths:
