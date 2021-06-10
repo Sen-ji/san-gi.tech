@@ -18,7 +18,7 @@ variables:
   && php bin/console d:d:c --if-not-exists --env=recette
   && php bin/console d:m:m --no-interaction --env=recette
   && yarn
-  aa yarn encore production
+  && yarn encore production
   && composer dump-env recette
   '
   DomainProd: 'san-gi.tech'
