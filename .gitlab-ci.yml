@@ -78,6 +78,7 @@ deploy:recette:
   stage: deploy
   only:
     - master
+  when: manual
   script:
     - echo $SSH_PRIVATE_KEY
     - echo $DomainTest
