@@ -31,7 +31,9 @@ variables:
   && composer install
   && cd /etc/apache2/sites-available
   && sudo ln -s /var/www/$DomainProd/config/apache/web.conf  $DomainProd.conf --force
+  && sudo ln -s /var/www/$DomainProd/config/apache/web-ssl.conf  $DomainProd-ssl.conf --force
   && sudo a2ensite $DomainProd.conf
+  && sudo a2ensite $DomainProd-ssl.conf
   && sudo service apache2 reload
   && cd ../..
   && echo "$DomainProd"
