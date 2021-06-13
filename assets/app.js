@@ -10,6 +10,8 @@ import './styles/app.scss';
 
 // start the Stimulus application
 import './bootstrap';
+import './js/nav.jsx'
+console.log("oui")
 import bsCustomFileInput from 'bs-custom-file-input';
 bsCustomFileInput.init();
 
