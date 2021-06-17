@@ -1,4 +1,20 @@
+@import '~bootstrap/scss/bootstrap';
 body {
     background-color: lightgray;
 }
-@import '~bootstrap/scss/bootstrap';
+.test1{
+    color:red;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: all 2s;
+}
+.test2{
+    color:blue;
+    position: fixed;
+    top: -15%;
+    right: 0;
+    left: 0;
+    transition: all 2s;
+}
