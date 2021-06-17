@@ -38,6 +38,7 @@ variables:
   && cd /var/www/$DomainProd
   && php bin/console d:d:c --if-not-exists --env=prod
   && php bin/console d:m:m --no-interaction --env=prod
+  && echo "bdd"
   && yarn install --cache-folder .yarn
   && yarn encore production
   && composer dump-env prod
