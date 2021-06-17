@@ -53,9 +53,9 @@ cache:
     - vendor/
 
 stages:
-  #- SecurityChecker
-  #- CodingStandards
-  #- UnitTests
+  - SecurityChecker
+  - CodingStandards
+  - UnitTests
   - deploy
 
 #phpcs:
