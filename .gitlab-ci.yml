@@ -11,7 +11,7 @@ variables:
   && cd /etc/apache2/sites-available
   && sudo ln -s /var/www/$DomainProd/config/apache/test.conf  $DomainTest.conf --force
   && sudo a2ensite $DomainTest.conf
-  && sudo service apache2 reload
+  && sudo systemctl reload apache2
   && cd ../..
   && echo "$DomainTest"
   && cd /var/www/$DomainProd
@@ -34,7 +34,7 @@ variables:
   && sudo ln -s /var/www/$DomainProd/config/apache/web-ssl.conf  $DomainProd-ssl.conf --force
   && sudo a2ensite $DomainProd.conf
   && sudo a2ensite $DomainProd-ssl.conf
-  && sudo service apache2 reload
+  && sudo systemctl reload apache2
   && cd ../..
   && echo "$DomainProd"
   && cd /var/www/$DomainProd
