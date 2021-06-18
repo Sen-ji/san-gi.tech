@@ -28,6 +28,7 @@ variables:
   && sudo git clone http://gitlab.san-gi.tech:444/Sangi/$DomainProd.git
   && cd $DomainProd
   && sudo chmod 777 -R ./
+  && composer dump-env prod
   && composer install
   && cd /etc/apache2/sites-available
   && sudo ln -s /var/www/$DomainProd/config/apache/web.conf  $DomainProd.conf --force
@@ -40,7 +41,6 @@ variables:
   && php bin/console d:d:c --if-not-exists --env=prod
   && php bin/console d:m:m --no-interaction --env=prod
   && yarn encore production
-  && composer dump-env prod
   && cd ~
   && sudo service apache2 reload
 '
