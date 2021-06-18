@@ -40,9 +40,6 @@ variables:
   && cd /var/www/$DomainProd
   && php bin/console d:d:c --if-not-exists --env=prod
   && php bin/console d:m:m --no-interaction --env=prod
-  && yarn cache clean
-  && yarn
-  && yarn encore production
   && cd ~
   && sudo service apache2 reload
 '
