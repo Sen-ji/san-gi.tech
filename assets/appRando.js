@@ -11,6 +11,7 @@ import './styles/app.scss';
 // start the Stimulus application
 import './bootstrap';
 import './js/nav.jsx'
+import './js/base.jsx'
 
 import bsCustomFileInput from 'bs-custom-file-input';
 bsCustomFileInput.init();
