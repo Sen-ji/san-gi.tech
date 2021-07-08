@@ -29,7 +29,7 @@ variables:
   && cd $DomainProd
   && sudo chmod 777 -R ./
   && composer install
-  && composer dump-env prod
+  && composer dump-env PROD
   && cd /etc/apache2/sites-available
   && sudo ln -s /var/www/$DomainProd/config/apache/web.conf  $DomainProd.conf --force
   && sudo ln -s /var/www/$DomainProd/config/apache/web-ssl.conf  $DomainProd-ssl.conf --force
@@ -52,7 +52,7 @@ variables:
   && sudo git clean -fd
   && sudo git pull
   && sudo composer install
-  && sudo composer dump-env prod
+  && sudo composer dump-env PROD
   && sudo php bin/console d:m:m --no-interaction --env=prod
   && sudo yarn cache clean
   && sudo yarn
