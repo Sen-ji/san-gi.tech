@@ -46,7 +46,17 @@ variables:
   && cd ~
   && sudo service apache2 reload
 '
+  commandsshinstallProd: 'echo "Nous sommes sur la rasp de prod"
+  && cd /var/www/$DomainProd
 
+  && sudo git pull
+  && composer install
+  && composer dump-env prod
+  && php bin/console d:m:m --no-interaction --env=prod
+  && sudo yarn cache clean
+  && sudo yarn
+  && sudo yarn encore production
+'
 before_script:
 #- composer install
 
@@ -58,6 +68,7 @@ stages:
   #- SecurityChecker
   #- CodingStandards
   #- UnitTests
+  - install
   - deploy
 
 #phpcs:
@@ -94,6 +105,21 @@ deploy:recette:
     - chmod 700 ~/.ssh
     - ssh-keyscan -p 24 192.168.1.21  >> ~/.ssh/known_hosts
     - ssh pi@192.168.1.21 -p 24 $commandsshTest
+deploy:installprod:
+  stage: install
+  only:
+    - master
+  when: manual
+  script:
+    - echo $DomainProd
+    - command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client -y )
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - ssh-keyscan -p 26 192.168.1.28  >> ~/.ssh/known_hosts
+    - ssh ubuntu@192.168.1.28 -p 26 $commandsshProd
+
 deploy:prod:
   stage: deploy
   only:
@@ -106,5 +132,5 @@ deploy:prod:
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
     - ssh-keyscan -p 26 192.168.1.28  >> ~/.ssh/known_hosts
-    - ssh ubuntu@192.168.1.28 -p 26 $commandsshProd
+    - ssh ubuntu@192.168.1.28 -p 26 $commandsshinstallProd
 
