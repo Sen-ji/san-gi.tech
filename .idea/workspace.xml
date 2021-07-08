@@ -20,7 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="983f784e-ae66-4101-9007-b88d84e7eebe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env.dev" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.prod" beforeDir="false" afterPath="$PROJECT_DIR$/.env.prod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.recette" beforeDir="false" afterPath="$PROJECT_DIR$/.env.recette" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/san-gi.tech.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/san-gi.tech.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/controllers.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/controllers.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Categorie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Categorie.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +146,10 @@
       <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
+      <path value="$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-uuid" />
     </include_path>
   </component>
   <component name="ProjectId" id="1oZzFXPldBWmvbMOKNz4haXcIoN" />
@@ -175,6 +187,7 @@
       <workItem from="1615555752681" duration="2929000" />
       <workItem from="1616436800214" duration="1229000" />
       <workItem from="1616446673521" duration="27000" />
+      <workItem from="1625778739553" duration="3867000" />
     </task>
     <servers />
   </component>
