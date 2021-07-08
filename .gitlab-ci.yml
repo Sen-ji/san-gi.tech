@@ -51,9 +51,9 @@ variables:
   && sudo git reset --hard
   && sudo git clean -fd
   && sudo git pull
-  && composer install
-  && composer dump-env prod
-  && php bin/console d:m:m --no-interaction --env=prod
+  && sudo composer install
+  && sudo composer dump-env prod
+  && sudo php bin/console d:m:m --no-interaction --env=prod
   && sudo yarn cache clean
   && sudo yarn
   && sudo yarn encore production
