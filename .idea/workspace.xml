@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,15 +23,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="983f784e-ae66-4101-9007-b88d84e7eebe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.dev" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.prod" beforeDir="false" afterPath="$PROJECT_DIR$/.env.prod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.recette" beforeDir="false" afterPath="$PROJECT_DIR$/.env.recette" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/appAdmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/admin.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/san-gi.tech.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/san-gi.tech.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/controllers.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/controllers.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/base.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/base.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Articles.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Articles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Categorie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Categorie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +161,10 @@
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/uid" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/vendor/willdurand/negotiation" />
+      <path value="$PROJECT_DIR$/vendor/nelmio/cors-bundle" />
+      <path value="$PROJECT_DIR$/vendor/api-platform/core" />
+      <path value="$PROJECT_DIR$/vendor/fig/link-util" />
     </include_path>
   </component>
   <component name="ProjectId" id="1oZzFXPldBWmvbMOKNz4haXcIoN" />
@@ -158,6 +173,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../crepe/creperie-website" />
@@ -187,7 +203,7 @@
       <workItem from="1615555752681" duration="2929000" />
       <workItem from="1616436800214" duration="1229000" />
       <workItem from="1616446673521" duration="27000" />
-      <workItem from="1625778739553" duration="3867000" />
+      <workItem from="1625778739553" duration="9969000" />
     </task>
     <servers />
   </component>
@@ -207,14 +223,17 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="725" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1615077751210">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625843228782">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="725" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1440.0.1440.860/1920.0.1280.680@0.0.1920.1040" timestamp="1615077751210" />
-    <state x="-885" y="227" key="FileChooserDialogImpl" timestamp="1616441376502">
-      <screen x="-1440" y="0" width="1440" height="860" />
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1440.0.1440.860/1920.0.1920.1040@0.0.1920.1040" timestamp="1625843228782" />
+    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1625842696568">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="-885" y="227" key="FileChooserDialogImpl/0.0.1920.1040/-1440.0.1440.860/1920.0.1280.680@-1440.0.1440.860" timestamp="1616441376502" />
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1440.0.1440.860/1920.0.1280.680@0.0.1920.1040" timestamp="1615491289756" />
+    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040/-1440.0.1440.860/1920.0.1920.1040@0.0.1920.1040" timestamp="1625842696568" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1625843183072">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1440.0.1440.860/1920.0.1920.1040@0.0.1920.1040" timestamp="1625843183072" />
   </component>
 </project>

@@ -42,7 +42,7 @@ class Articles
     /**
      * @ORM\ManyToOne(targetEntity=Categorie::class, inversedBy="articles")
      */
-    private $catÈgorie;
+    private $cat√©gorie;
 
     /**
      * @ORM\OneToMany(targetEntity=Commentaires::class, mappedBy="article")
@@ -107,14 +107,14 @@ class Articles
         return $this;
     }
 
-    public function getCatÈgorie(): ?Categorie
+    public function getcat√©gorie(): ?Categorie
     {
-        return $this->catÈgorie;
+        return $this->cat√©gorie;
     }
 
-    public function setCatÈgorie(?Categorie $catÈgorie): self
+    public function setcat√©gorie(?Categorie $cat√©gorie): self
     {
-        $this->catÈgorie = $catÈgorie;
+        $this->cat√©gorie = $cat√©gorie;
 
         return $this;
     }

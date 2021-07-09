@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\CategorieRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -9,7 +10,9 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass=CategorieRepository::class)
+ * @ApiResource()
  */
+
 class Categorie
 {
     /**
@@ -40,7 +43,7 @@ class Categorie
     private $enfants;
 
     /**
-     * @ORM\OneToMany(targetEntity=Articles::class, mappedBy="catÈgorie")
+     * @ORM\OneToMany(targetEntity=Articles::class, mappedBy="cat√©gorie")
      */
     private $articles;
 
@@ -133,7 +136,7 @@ class Categorie
     {
         if (!$this->articles->contains($article)) {
             $this->articles[] = $article;
-            $article->setCatÈgorie($this);
+            $article->setcat√©gorie($this);
         }
 
         return $this;
@@ -143,8 +146,8 @@ class Categorie
     {
         if ($this->articles->removeElement($article)) {
             // set the owning side to null (unless already changed)
-            if ($article->getCatÈgorie() === $this) {
-                $article->setCatÈgorie(null);
+            if ($article->getcat√©gorie() === $this) {
+                $article->setcat√©gorie(null);
             }
         }
 

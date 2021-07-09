@@ -22,6 +22,7 @@ Encore
      */
     .addEntry('app', './assets/app.js')
     .addEntry('appRando', './assets/appRando.js')
+    .addEntry('appAdmin', './assets/appAdmin.js')
 
 
     // enables the Symfony UX Stimulus bridge (used in assets/bootstrap.js)

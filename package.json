@@ -29,7 +29,10 @@
     "dependencies": {
         "@material-ui/core": "^4.11.4",
         "babel-loader": "^8.2.2",
+        "prop-types": "^15.7.2",
+        "ra-data-json-server": "^3.17.0",
         "react": "^17.0.2",
+        "react-admin": "^3.17.0",
         "react-dom": "^17.0.2",
         "react-headroom": "^3.1.1"
     }
