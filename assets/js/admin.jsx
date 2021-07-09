@@ -2,17 +2,17 @@ import React from 'react'
 import ReactDOM from 'react-dom';
 
 import  {Admin, Resource, ListGuesser} from  'react-admin';
-import jsonServerProvider from 'ra-data-json-server';
+import restProvider from 'ra-data-simple-rest';
+import { PostList, PostEdit, PostCreate, PostIcon } from './posts';
 
-const dataProvider = jsonServerProvider('./api')
 class Base extends React.Component{
     constructor(props) {
         super(props);
     }
     render(){
         return <div className=" ">
-                <Admin dataProvider={dataProvider}>
-                    <Resource name="categories" list={ListGuesser} />
+            <Admin dataProvider={restProvider('./api')}>
+                    <Resource name="categories" list={PostList} edit={PostEdit} create={PostCreate} icon={PostIcon}/>
                 </Admin>
             </div>
 
