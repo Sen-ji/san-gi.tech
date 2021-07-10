@@ -8,8 +8,6 @@ export const PostIcon = BookIcon;
 export const CategoryList = props => (
     <List {...props}>
         <Datagrid rowClick="edit">
-            <TextField source="@id" />
-            <TextField source="@type" />
             <TextField source="id" />
             <TextField source="type" />
             <TextField source="name" />
@@ -25,8 +23,6 @@ const PostTitle = ({ record }) => {
 export const CategoryEdit = (props) => (
     <Edit title={<PostTitle />} {...props}>
         <SimpleForm>
-            <TextInput source="@id" />
-            <TextInput source="@type" />
             <TextInput source="id" />
             <TextInput source="type" />
             <TextInput source="name" />
@@ -39,8 +35,6 @@ export const CategoryEdit = (props) => (
 export const CategoryCreate = (props) => (
     <Create title="Create a Post" {...props}>
         <SimpleForm>
-            <TextInput source="@id" />
-            <TextInput source="@type" />
             <TextInput source="id" />
             <TextInput source="type" />
             <TextInput source="name" />
@@ -67,8 +61,6 @@ export const ArticlesList = props => (
 export const ArticlesEdit = (props) => (
     <Edit title={<PostTitle />} {...props}>
         <SimpleForm>
-            <TextInput source="@id" />
-            <TextInput source="@type" />
             <TextInput source="id" />
             <TextInput source="type" />
             <TextInput source="name" />
@@ -81,8 +73,6 @@ export const ArticlesEdit = (props) => (
 export const ArticlesCreate = (props) => (
     <Create title="Create a Post" {...props}>
         <SimpleForm>
-            <TextInput source="@id" />
-            <TextInput source="@type" />
             <TextInput source="id" />
             <TextInput source="type" />
             <TextInput source="name" />
@@ -107,8 +97,6 @@ export const CommentairesList = props => (
 export const CommentairesEdit = (props) => (
     <Edit title={<PostTitle />} {...props}>
         <SimpleForm>
-            <TextInput source="@id" />
-            <TextInput source="@type" />
             <TextInput source="id" />
             <TextInput source="type" />
             <TextInput source="name" />
@@ -121,8 +109,6 @@ export const CommentairesEdit = (props) => (
 export const CommentairesCreate = (props) => (
     <Create title="Create a Post" {...props}>
         <SimpleForm>
-            <TextInput source="@id" />
-            <TextInput source="@type" />
             <TextInput source="id" />
             <TextInput source="type" />
             <TextInput source="name" />
@@ -140,17 +126,17 @@ export const TestList = props => (
 );
 
 export const TestCreate = (props) => (
-    <Edit title={<PostTitle />} {...props}>
+    <Create title="Create a Post" {...props}>
         <SimpleForm>
             <TextInput source="name" />
-            <TextInput disabled source="id" />
         </SimpleForm>
-    </Edit>
+    </Create>
 );
 
 export const TestEdit = (props) => (
     <Create title="Create a Post" {...props}>
         <SimpleForm>
+
             <TextInput disabled source="id" />
             <TextInput source="name" />
 

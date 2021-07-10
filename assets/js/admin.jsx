@@ -11,7 +11,7 @@ import {
 } from '@api-platform/admin';
 import FieldGuesser from "@api-platform/admin/lib/FieldGuesser";
 import ResourceGuesser from "@api-platform/admin/lib/ResourceGuesser";
-import HydraAdmin from "@api-platform/admin/lib/hydra/HydraAdmin";
+import { HydraAdmin } from "@api-platform/admin";
 import { CategoryList,CategoryCreate,CategoryEdit,ArticlesList,ArticlesCreate,ArticlesEdit,CommentairesList,CommentairesCreate,CommentairesEdit,
     TestList,TestCreate,TestEdit} from './posts';
 
@@ -21,17 +21,7 @@ class Base extends React.Component{
     }
     render(){
         return <div className=" ">
-            <HydraAdmin entrypoint={"./api"}>
-                <ResourceGuesser
-                    name="categories"
-                    list={CategoryList}
-                    create={CategoryCreate}
-                    edit={CategoryEdit}
-                />
-                <ResourceGuesser name={"articles"} list={ArticlesList} create={ArticlesCreate} edit={ArticlesEdit} />
-                <ResourceGuesser name={"commentaires"} list={CommentairesList} create={CommentairesCreate} edit={CommentairesEdit}/>
-                <ResourceGuesser name={"tests"} list={TestList} create={TestCreate} edit={TestEdit}/>
-            </HydraAdmin>
+                <HydraAdmin entrypoint='https://127.0.0.1:8000/api' />
             </div>
 
     }
