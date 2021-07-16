@@ -26,7 +26,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/admin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/admin.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/posts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/posts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +189,8 @@
       <workItem from="1615555752681" duration="2929000" />
       <workItem from="1616436800214" duration="1229000" />
       <workItem from="1616446673521" duration="27000" />
-      <workItem from="1625778739553" duration="48939000" />
+      <workItem from="1625778739553" duration="49561000" />
+      <workItem from="1626439972689" duration="2527000" />
     </task>
     <servers />
   </component>
