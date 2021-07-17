@@ -1,10 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
 
-import  {Admin} from  'react-admin';
-import jsonServerProvider from 'ra-data-json-server';
-
-const dataProvider = jsonServerProvider('http://192.168.1.10:82/api')
 class Base extends React.Component{
     constructor(props) {
         super(props);
@@ -13,7 +9,6 @@ class Base extends React.Component{
         return <div className="blogRando" style={{backgroundImage: "url(../../img/fond/drone"+(Math.ceil(Math.random() * 6))+".jpg)"}}>
             <div className=" ">
 
-                <Admin dataProvider={dataProvider}/>
                 <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse

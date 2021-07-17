@@ -9,10 +9,11 @@
 import './styles/app.scss';
 
 // start the Stimulus application
-import './bootstrap';
-import './js/nav.jsx'
-import './js/base.jsx'
+import { Tooltip, Toast, Popover } from 'bootstrap';
 
+import './bootstrap.js';
+import './js/base.jsx'
+import './js/rando/nav.jsx'
 import bsCustomFileInput from 'bs-custom-file-input';
 bsCustomFileInput.init();
 
