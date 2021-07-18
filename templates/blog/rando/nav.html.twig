@@ -15,15 +15,22 @@
                         {% if cat.type==1 %}
                             {% if cat.enfants|length !=0%}
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+
+                                    <div class="nav-link ">
+                                    <a class="text-decoration-none text-secondary" href="#" id="navbarDropdown" role="button"
                                        data-bs-toggle="dropdown" aria-expanded="false">
                                         {{ cat.name }}
                                     </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        {% for fils in cat.enfants%}
-                                            <li><a class="dropdown-item"  href="#">{{ fils.name }}</a></li>
-                                        {% endfor %}
-                                    </ul>
+                                    <a type="button" class="dropdown-toggle dropdown-toggle-split text-secondary" id="navbarDropdown" role="button"
+                                       data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="sr-only"></span>
+                                    </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            {% for fils in cat.enfants%}
+                                                <li><a class="dropdown-item"  href="#">{{ fils.name }}</a></li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
                                 </li>
 
 
