@@ -51,6 +51,11 @@ class Articles
      */
     private $commentaires;
 
+    /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $Content;
+
     public function __construct()
     {
         $this->commentaires = new ArrayCollection();
@@ -147,6 +152,18 @@ class Articles
                 $commentaire->setArticle(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getContent(): ?string
+    {
+        return $this->Content;
+    }
+
+    public function setContent(?string $Content): self
+    {
+        $this->Content = $Content;
 
         return $this;
     }

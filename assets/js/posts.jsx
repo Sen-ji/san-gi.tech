@@ -49,6 +49,7 @@ export const ArticlesList = props => (
         <FieldGuesser source={"name"} />
         <FieldGuesser source={"author"} />
         <FieldGuesser source={"PublicationDate"} />
+        <FieldGuesser source={"content"} />
         <FieldGuesser source={"editDate"} />
         <FieldGuesser source={"catégorie"} />
         <FieldGuesser source={"commentaires"} />
