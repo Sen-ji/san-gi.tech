@@ -23,8 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="983f784e-ae66-4101-9007-b88d84e7eebe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20210716221137.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/base.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/base.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +196,7 @@
       <workItem from="1616436800214" duration="1229000" />
       <workItem from="1616446673521" duration="27000" />
       <workItem from="1625778739553" duration="49561000" />
-      <workItem from="1626439972689" duration="23931000" />
+      <workItem from="1626439972689" duration="28324000" />
     </task>
     <servers />
   </component>
@@ -219,10 +220,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1440.0.1440.860/1920.0.1920.1040@0.0.1920.1040" timestamp="1625843228782" />
-    <state x="667" y="253" width="666" height="534" key="find.popup" timestamp="1626554973653">
+    <state x="667" y="253" width="666" height="534" key="find.popup" timestamp="1626568888757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="253" width="666" height="534" key="find.popup/0.0.1920.1040/-1440.0.1440.860/1920.0.1920.1040@0.0.1920.1040" timestamp="1626554973653" />
+    <state x="667" y="253" width="666" height="534" key="find.popup/0.0.1920.1040/-1440.0.1440.860/1920.0.1920.1040@0.0.1920.1040" timestamp="1626568888757" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1625938296832">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

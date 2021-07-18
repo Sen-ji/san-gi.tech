@@ -9,6 +9,7 @@ body {
     right: 0;
     left: 0;
     transition: all 200ms;
+    z-index: 1;
 }
 .test2{
     color:blue;
@@ -17,6 +18,7 @@ body {
     right: 0;
     left: 0;
     transition: all 4s;
+    z-index: 1;
 }
 .blogRando{
 
@@ -25,6 +27,23 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 100vh;
+}
+.imgtop{
+
+    background-color: #cccccc;
+    height:  100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.imgtoptxt{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
 
 @include media-breakpoint-up(sm) {
