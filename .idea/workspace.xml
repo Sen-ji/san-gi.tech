@@ -23,27 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="983f784e-ae66-4101-9007-b88d84e7eebe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/js/rando/nav.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog/rando/nav.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/san-gi.tech.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/san-gi.tech.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210716221137.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/appAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/appAdmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/appRando.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/appRando.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/base.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/base.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/indexRando.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/indexRando.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index/test.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index/test.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/nav.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/nav.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +195,7 @@
       <workItem from="1616436800214" duration="1229000" />
       <workItem from="1616446673521" duration="27000" />
       <workItem from="1625778739553" duration="49561000" />
-      <workItem from="1626439972689" duration="22449000" />
+      <workItem from="1626439972689" duration="23317000" />
     </task>
     <servers />
   </component>
