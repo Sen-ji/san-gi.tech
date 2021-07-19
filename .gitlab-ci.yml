@@ -38,8 +38,8 @@ variables:
   && cd ../..
   && echo "$DomainProd"
   && cd /var/www/$DomainProd
-  && php bin/console d:d:c --if-not-exists --env=prod
-  && php bin/console d:m:m --no-interaction --env=prod
+  && php bin/console d:d:c --if-not-exists --env=PROD
+  && php bin/console d:m:m --no-interaction --env=PROD
   && sudo yarn cache clean
   && sudo yarn
   && sudo yarn encore production
