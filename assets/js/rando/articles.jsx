@@ -15,13 +15,14 @@ import Typography from '@material-ui/core/Typography';
 function Article ({ name, content,}){
      return <div>
          <Card className="cardArticle">
-             <CardActionArea>
+             <CardActionArea >
                  <CardMedia
                      component="img"
                      alt="Contemplative Reptile"
                      height="140"
-                     image="./img/fond/drone1.jpg"
+                     image={"./img/fond/drone"+(Math.ceil(Math.random() * 6))+".jpg"}
                      title="Contemplative Reptile"
+
                  />
                  <CardContent>
                      <Typography gutterBottom variant="h5" component="h2">

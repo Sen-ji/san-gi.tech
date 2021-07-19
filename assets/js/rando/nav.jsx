@@ -32,7 +32,7 @@ class Nav extends React.Component{
         }
     }
     render(){
-        return <nav className={(this.state.totop?"test1 ":"test2 ")+ " navbar navbar-expand-lg navbar-light bg-light"} dangerouslySetInnerHTML={{__html: document.querySelector("nav").innerHTML}}>
+        return <nav className={(this.state.totop?"test1 ":"test2 ")+ " navbar navbar-expand-lg navbar-light bg-light shadow"} dangerouslySetInnerHTML={{__html: document.querySelector("nav").innerHTML}}>
 
         </nav>
 
