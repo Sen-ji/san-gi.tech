@@ -23,20 +23,18 @@ class Pourquoi extends React.Component{
 
     }
     render() {
-        return  <Paper elevation={10} >
-            <div className="text-center ">
-                <div className="why">
-                    <h2 className="p-5">Pourquoi ce blog</h2>
-                    <p>Pourquoi pas ? </p>
-                    <p>En vrai, le secret pour progresser dans le domaine du dev, bha, c'est de créer des truc</p>
-                    <p>Et en plus c'est cool de partager ce que tu fais </p>
-                    <p>Lorem ipsup </p>
-                    <p>Lorem ipsup </p>
-                    <p>Lorem ipsup </p>
-                    <p>Lorem ipsup </p>
-                    <p>Lorem ipsup </p>
-                </div>
-            </div>
+        return  <Paper className="why text-center m-auto" elevation={10} >
+
+            <h2 className="p-5">Pourquoi ce blog</h2>
+            <p>Pourquoi pas ? </p>
+            <p>En vrai, le secret pour progresser dans le domaine du dev, bha, c'est de créer des truc</p>
+            <p>Et en plus c'est cool de partager ce que tu fais </p>
+            <p>Lorem ipsup </p>
+            <p>Lorem ipsup </p>
+            <p>Lorem ipsup </p>
+            <p>Lorem ipsup </p>
+            <p>Lorem ipsup </p>
+
         </Paper>
     }
 

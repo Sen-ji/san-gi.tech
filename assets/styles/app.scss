@@ -47,9 +47,10 @@ body {
 }
 .why{
     background-color: #ecf0f1;
+    max-width: 600px;
 }
 .cardArticle{
-    max-width: 345px;
+    width: 345px;
 }
 
 @include media-breakpoint-up(sm) {
