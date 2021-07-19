@@ -45,6 +45,12 @@ body {
     transform: translate(-50%, -50%);
     color: white;
 }
+.why{
+    background-color: #ecf0f1;
+}
+.cardArticle{
+    max-width: 345px;
+}
 
 @include media-breakpoint-up(sm) {
 
