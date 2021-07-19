@@ -53,7 +53,7 @@ variables:
   && sudo git pull
   && sudo composer install
   && sudo composer dump-env PROD
-  && sudo php bin/console d:m:m --no-interaction --env=prod
+  && sudo php bin/console d:m:m --no-interaction --env=PROD
   && sudo yarn cache clean
   && sudo yarn
   && sudo yarn encore production
