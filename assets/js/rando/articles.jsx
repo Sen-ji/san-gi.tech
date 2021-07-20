@@ -22,7 +22,6 @@ function Article ({ name, content,catégorie}){
                      alt="Contemplative Reptile"
                      height="140"
                      image={"./img/fond/drone"+(Math.ceil(Math.random() * 6))+".jpg"}
-                     title="Contemplative Reptile"
 
                  />
                  <CardContent>
