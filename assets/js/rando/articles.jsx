@@ -12,10 +12,11 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-function Article ({ name, content,}){
+
+function Article ({ name, content,catégorie}){
      return <div>
          <Card className="cardArticle">
-             <CardActionArea >
+             <CardActionArea href={catégorie}>
                  <CardMedia
                      component="img"
                      alt="Contemplative Reptile"
@@ -66,7 +67,7 @@ class LastArticles extends React.Component{
             <Grid container justifyContent="center" spacing={10}>
                 {this.state.articles.map(a =>
                         <Grid item>
-                            <Article key={a.id} name={a.name} content={a.content}/>
+                            <Article key={a.id} name={a.name} content={a.content} catégorie={a.catégorie}/>
                         </Grid>
                     )}
 

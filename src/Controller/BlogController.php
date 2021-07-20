@@ -24,4 +24,5 @@ class BlogController extends AbstractController
             'categories' => $categories
         ]);
     }
+
 }

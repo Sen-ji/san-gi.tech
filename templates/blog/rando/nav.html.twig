@@ -1,7 +1,7 @@
 <NavBlog>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="test1 navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Sangi</a>
+        <a class="navbar-brand" href="/blogRando">Sangi</a>
         <button id="buttonNav" class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation" >
@@ -17,8 +17,8 @@
                                 <li class="nav-item dropdown">
 
                                     <div class="nav-link ">
-                                    <a class="text-decoration-none text-secondary" href="#" id="navbarDropdown" role="button"
-                                       data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="text-decoration-none text-secondary" href="/blogRando/{{ cat.name }}" id="navbarDropdown" role="button"
+                                       aria-expanded="false">
                                         {{ cat.name }}
                                     </a>
                                     <a type="button" class="dropdown-toggle dropdown-toggle-split text-secondary" id="navbarDropdown" role="button"
@@ -27,7 +27,7 @@
                                     </a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                             {% for fils in cat.enfants%}
-                                                <li><a class="dropdown-item"  href="#">{{ fils.name }}</a></li>
+                                                <li><a class="dropdown-item"  href="/blogRando/{{ fils.name }}">{{ fils.name }}</a></li>
                                             {% endfor %}
                                         </ul>
                                     </div>
@@ -36,16 +36,16 @@
 
 
                             {% else %}
-                                <a class="nav-link" href="#">{{ cat.name }}</a>
+                                <a class="nav-link" href="/blogRando/{{ cat.name }}">{{ cat.name }}</a>
                             {% endif %}
                         {% endif %}
                     </li>
                 {% endfor %}
             </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+{#            <form class="d-flex">#}
+{#                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>#}
+{#                <button class="btn btn-outline-success" type="submit">Search</button>#}
+{#            </form>#}
         </div>
     </div>
 </nav>
