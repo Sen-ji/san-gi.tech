@@ -16,7 +16,7 @@ import Typography from '@material-ui/core/Typography';
 function Article ({ name, content,catégorie}){
      return <div>
          <Card className="cardArticle">
-             <CardActionArea href={catégorie}>
+             <CardActionArea href={"blogRando/"+catégorie.split("/")[3]+"/"+name}>
                  <CardMedia
                      component="img"
                      alt="Contemplative Reptile"
@@ -98,7 +98,7 @@ class PopArticles extends React.Component{
             <Grid container justifyContent="center" spacing={10}>
                 {this.state.articles.map(a =>
                     <Grid item>
-                        <Article key={a.id} name={a.name} content={a.content}/>
+                        <Article key={a.id} name={a.name} content={a.content} catégorie={a.catégorie}/>
                     </Grid>
                 )}
 

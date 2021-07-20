@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiProperty;
 use ApiPlatform\Core\Annotation\ApiResource;
 use App\Repository\CategorieRepository;
 use Doctrine\Common\Collections\ArrayCollection;
@@ -19,6 +20,7 @@ class Categorie
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @ApiProperty(identifier=false)
      */
     private $id;
 
@@ -29,6 +31,7 @@ class Categorie
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @ApiProperty(identifier=true)
      */
     private $name;
 
