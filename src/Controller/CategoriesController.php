@@ -13,9 +13,11 @@ class CategoriesController extends AbstractController
     public function blogRandoCat(string $cat): Response
     {
         $categories = $this->getDoctrine()->getRepository(Categorie::class)->findAll();
+        $catact = $this->getDoctrine()->getRepository(Categorie::class)->findByName($cat);
         return $this->render('categories/categories.html.twig', [
             "cat" => $cat,
-            'categories' => $categories
+            'categories' => $categories,
+            'catact' =>$catact[0]
         ]);
     }
     #[Route('/blogRando/{cat}/{article}', name: 'blogRandoArticle')]

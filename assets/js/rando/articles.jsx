@@ -55,7 +55,7 @@ class LastArticles extends React.Component{
     componentDidMount() {
         axios.get("./api/articles").then(response => {
             this.setState({articles : response.data["hydra:member"]})
-            console.log(this.state.articles)
+            console.log(response.data)
 
         })
     }
