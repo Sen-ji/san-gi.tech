@@ -23,12 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="983f784e-ae66-4101-9007-b88d84e7eebe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/js/rando/test.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/appRandoCat.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/appRandoCat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/base.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/base.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/rando/articles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/rando/articles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CategoriesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Categorie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Categorie.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/blog/indexRando.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/indexRando.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog/rando/nav.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/rando/nav.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/categories/categories.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/categories/categories.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -205,7 +206,7 @@
       <workItem from="1625778739553" duration="49561000" />
       <workItem from="1626439972689" duration="28324000" />
       <workItem from="1626731947614" duration="6042000" />
-      <workItem from="1626738060092" duration="12985000" />
+      <workItem from="1626738060092" duration="16461000" />
     </task>
     <servers />
   </component>
@@ -233,10 +234,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1440.0.1440.860/1920.0.1920.1040@0.0.1920.1040" timestamp="1626737162559" />
-    <state x="126" y="37" width="1299" height="592" key="find.popup" timestamp="1626877086808">
+    <state x="2810" y="373" width="906" height="460" key="dock-window-1" timestamp="1626884708863">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2810" y="373" width="906" height="460" key="dock-window-1/0.0.1920.1040/-1440.0.1440.860/1920.0.1920.1040@0.0.1920.1040" timestamp="1626884708863" />
+    <state x="126" y="37" width="1299" height="592" key="find.popup" timestamp="1626884173434">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="126" y="37" width="1299" height="592" key="find.popup/0.0.1920.1040/-1440.0.1440.860/1920.0.1920.1040@0.0.1920.1040" timestamp="1626877086808" />
+    <state x="126" y="37" width="1299" height="592" key="find.popup/0.0.1920.1040/-1440.0.1440.860/1920.0.1920.1040@0.0.1920.1040" timestamp="1626884173434" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1625938296832">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
