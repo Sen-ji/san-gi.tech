@@ -21,11 +21,13 @@
     </div>
     <p>{{ catact.description}}</p>
     {#    <destination-fils></destination-fils>#}
-        <last-articles props="{test:'test'}"></last-articles>
+        <last-articles props="{test:'test'}">
+            {% for article in catact.articles %}
+                <div><a href="/blogRando/{{ catact.name }}/{{ article.name }}"></a></div>
 
-{#    {% for article in catact.articles %}#}
-{#        {{ dump(article) }}#}
+            {% endfor %}
+        </last-articles>
 
-{#    {% endfor %}#}
+
 </div>
 {% endblock %}
