@@ -118,5 +118,5 @@ class PopArticlesElement extends HTMLElement {
 }
 customElements.define('last-articles', LastArticlesElement);
 //ReactDOM.render(<LastArticles/>, document.querySelector("last-articles"))
-customElements.define('last-articles', PopArticlesElement);
+customElements.define('pop-articles', PopArticlesElement);
 //ReactDOM.render(<PopArticles/>, document.querySelector("PopArticles"))
