@@ -38,4 +38,10 @@ class Nav extends React.Component{
 
     }
 }
-ReactDOM.hydrate(<Nav/>, document.querySelector("NavBlog"))
+class NavBlog extends HTMLElement {
+    connectedCallback() {
+        ReactDOM.hydrate(<Nav/>, this);
+    }
+}
+//ReactDOM.hydrate(<Nav/>, document.querySelector("NavBlog"))
+customElements.define('nav-blog', NavBlog);

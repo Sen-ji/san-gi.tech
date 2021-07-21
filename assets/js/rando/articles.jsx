@@ -76,6 +76,11 @@ class LastArticles extends React.Component{
     }
 
 }
+class LastArticlesElement extends HTMLElement {
+    connectedCallback() {
+        ReactDOM.render(<LastArticles/>, this);
+    }
+}
 class PopArticles extends React.Component{
     constructor(props) {
         super(props);
@@ -100,13 +105,18 @@ class PopArticles extends React.Component{
                         <Article key={a.id} name={a.name} content={a.content} catégorie={a.catégorie}/>
                     </Grid>
                 )}
-
             </Grid>
         </div>
 
     }
 
 }
-
-ReactDOM.render(<LastArticles/>, document.querySelector("LastArticles"))
-ReactDOM.render(<PopArticles/>, document.querySelector("PopArticles"))
+class PopArticlesElement extends HTMLElement {
+    connectedCallback() {
+        ReactDOM.render(<LastArticles/>, this);
+    }
+}
+customElements.define('last-articles', LastArticlesElement);
+//ReactDOM.render(<LastArticles/>, document.querySelector("last-articles"))
+customElements.define('last-articles', PopArticlesElement);
+//ReactDOM.render(<PopArticles/>, document.querySelector("PopArticles"))
