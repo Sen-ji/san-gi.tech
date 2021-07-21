@@ -12,8 +12,10 @@ import './styles/app.scss';
 import { Tooltip, Toast, Popover } from 'bootstrap';
 
 import './bootstrap.js';
+import './js/base.jsx'
 import './js/rando/nav.jsx'
-import './js/rando/test.jsx'
+import './js/rando/articles.jsx'
+import './js/rando/destinationFils'
 
 
 import bsCustomFileInput from 'bs-custom-file-input';

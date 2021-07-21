@@ -16,12 +16,12 @@ import Typography from '@material-ui/core/Typography';
 function Article ({ name, content,catégorie}){
      return <div>
          <Card className="cardArticle">
-             <CardActionArea href={"blogRando/"+catégorie.split("/")[3]+"/"+name}>
+             <CardActionArea href={"/blogRando/"+catégorie.split("/")[3]+"/"+name}>
                  <CardMedia
                      component="img"
                      alt="Contemplative Reptile"
                      height="140"
-                     image={"./img/fond/drone"+(Math.ceil(Math.random() * 6))+".jpg"}
+                     image={"/img/fond/drone"+(Math.ceil(Math.random() * 6))+".jpg"}
 
                  />
                  <CardContent>
@@ -53,7 +53,7 @@ class LastArticles extends React.Component{
         }
     }
     componentDidMount() {
-        axios.get("./api/articles").then(response => {
+        axios.get("/api/articles").then(response => {
             this.setState({articles : response.data["hydra:member"]})
             console.log(this.state.articles)
 
@@ -89,7 +89,7 @@ class PopArticles extends React.Component{
         }
     }
     componentDidMount() {
-        axios.get("./api/articles").then(response => {
+        axios.get("/api/articles").then(response => {
             this.setState({articles : response.data["hydra:member"]})
             console.log(this.state.articles)
 

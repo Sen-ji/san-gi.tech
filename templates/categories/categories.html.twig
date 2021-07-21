@@ -12,7 +12,20 @@
 
 <div class="container pt-5">
     <h1 class="text-center p-5">{{ cat }}</h1>
+    <div class="text-center mb-5">
+        {% for fils in catact.enfants %}
+
+            <button type="button" class="btn btn-outline-secondary m-2">{{ fils.name }}</button>
+
+        {% endfor %}
+    </div>
     <p>{{ catact.description}}</p>
-<x-search></x-search>
+    {#    <destination-fils></destination-fils>#}
+        <last-articles props="{test:'test'}"></last-articles>
+
+{#    {% for article in catact.articles %}#}
+{#        {{ dump(article) }}#}
+
+{#    {% endfor %}#}
 </div>
 {% endblock %}
