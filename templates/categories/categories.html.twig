@@ -10,18 +10,18 @@
     {% include 'blog/rando/nav.html.twig' %}
 
 
-<div class="container pt-5">
+<div class="container pt-5 pb-5">
     <h1 class="text-center p-5">{{ cat }}</h1>
     <div class="text-center mb-5">
         {% for fils in catact.enfants %}
 
-            <button type="button" class="btn btn-outline-secondary m-2">{{ fils.name }}</button>
+            <a  href="/blogRando/{{ fils.name }}" ><button type="button"class="btn btn-outline-secondary m-2">{{ fils.name }}</button></a>
 
         {% endfor %}
     </div>
     <p>{{ catact.description}}</p>
     {#    <destination-fils></destination-fils>#}
-        <last-articles props="{test:'test'}">
+        <last-articles data-test="{{ catact.name }}">
             {% for article in catact.articles %}
                 <div><a href="/blogRando/{{ catact.name }}/{{ article.name }}"></a></div>
 
@@ -30,4 +30,5 @@
 
 
 </div>
+    {% include 'blog/rando/footer.html.twig' %}
 {% endblock %}

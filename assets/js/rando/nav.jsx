@@ -40,6 +40,7 @@ class Nav extends React.Component{
 }
 class NavBlog extends HTMLElement {
     connectedCallback() {
+        console.log(this.dataset.categories)
         ReactDOM.hydrate(<Nav/>, this);
     }
 }

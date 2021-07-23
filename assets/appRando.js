@@ -15,6 +15,7 @@ import './bootstrap.js';
 import './js/base.jsx'
 import './js/rando/nav.jsx'
 import './js/rando/articles.jsx'
+import './js/rando/editor.jsx'
 
 import bsCustomFileInput from 'bs-custom-file-input';
 bsCustomFileInput.init();

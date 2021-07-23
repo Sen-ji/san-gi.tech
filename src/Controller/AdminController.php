@@ -15,4 +15,11 @@ class AdminController extends AbstractController
             'controller_name' => 'AdminController',
         ]);
     }
+    #[Route('/admin/article', name: 'admin')]
+    public function articles(): Response
+    {
+        return $this->render('admin/article.html.twig', [
+            'controller_name' => 'AdminController',
+        ]);
+    }
 }

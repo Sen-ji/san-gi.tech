@@ -47,6 +47,7 @@ function Article ({ name, content,catégorie}){
 
 class LastArticles extends React.Component{
     constructor(props) {
+
         super(props);
         this.state = {
             articles:[]
@@ -77,7 +78,9 @@ class LastArticles extends React.Component{
 
 }
 class LastArticlesElement extends HTMLElement {
+
     connectedCallback() {
+
         ReactDOM.render(<LastArticles/>, this);
     }
 }

@@ -23,7 +23,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="983f784e-ae66-4101-9007-b88d84e7eebe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/js/rando/editor.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/rando/tools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/article.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/san-gi.tech.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/san-gi.tech.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/appRando.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/appRando.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/rando/articles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/rando/articles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/rando/nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/rando/nav.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/rando/test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/rando/test.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CategoriesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog/rando/footer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/rando/footer.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/categories/article.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/categories/article.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/categories/categories.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/categories/categories.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +169,7 @@
       <path value="$PROJECT_DIR$/vendor/api-platform/core" />
       <path value="$PROJECT_DIR$/vendor/fig/link-util" />
       <path value="$PROJECT_DIR$/vendor/twbs/bootstrap" />
+      <path value="$PROJECT_DIR$/vendor/twig/intl-extra" />
     </include_path>
   </component>
   <component name="ProjectId" id="1oZzFXPldBWmvbMOKNz4haXcIoN" />
@@ -174,9 +194,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\projets\san-gi.tech\templates\blog\rando" />
+      <recent name="C:\projets\san-gi.tech\public" />
       <recent name="C:\projets\san-gi.tech\assets" />
       <recent name="C:\projets\san-gi.tech\assets\js" />
-      <recent name="C:\projets\san-gi.tech\templates\blog\rando" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -199,7 +220,7 @@
       <workItem from="1625778739553" duration="49561000" />
       <workItem from="1626439972689" duration="28324000" />
       <workItem from="1626731947614" duration="6042000" />
-      <workItem from="1626738060092" duration="27491000" />
+      <workItem from="1626738060092" duration="41299000" />
     </task>
     <servers />
   </component>
@@ -235,10 +256,10 @@
       <screen x="-1440" y="0" width="1440" height="860" />
     </state>
     <state x="-1543" y="-10" width="1456" height="750" maximized="true" key="dock-window-2/0.0.1920.1040/-1440.0.1440.860/1920.0.1920.1040@0.0.1920.1040" timestamp="1626886761793" />
-    <state x="126" y="37" width="1299" height="592" key="find.popup" timestamp="1626888288261">
+    <state x="126" y="37" width="1299" height="592" key="find.popup" timestamp="1626970233308">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="126" y="37" width="1299" height="592" key="find.popup/0.0.1920.1040/-1440.0.1440.860/1920.0.1920.1040@0.0.1920.1040" timestamp="1626888288261" />
+    <state x="126" y="37" width="1299" height="592" key="find.popup/0.0.1920.1040/-1440.0.1440.860/1920.0.1920.1040@0.0.1920.1040" timestamp="1626970233308" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1625938296832">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -247,5 +268,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1440.0.1440.860/1920.0.1920.1040@0.0.1920.1040" timestamp="1625921619602" />
+    <state x="682" y="432" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1626910238352">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="682" y="432" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1040/-1440.0.1440.860/1920.0.1920.1040@0.0.1920.1040" timestamp="1626910238352" />
   </component>
 </project>

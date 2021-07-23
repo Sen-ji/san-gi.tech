@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Articles;
 use App\Entity\Categorie;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -24,9 +25,10 @@ class CategoriesController extends AbstractController
     public function blogRandoArticle(string $cat,string $article): Response
     {
         $categories = $this->getDoctrine()->getRepository(Categorie::class)->findAll();
+        $art = $this->getDoctrine()->getRepository(Articles::class)->findOneByName($article);
         return $this->render('categories/article.html.twig', [
             "cat" => $cat,
-            "article" =>$article,
+            "article" =>$art,
             'categories' => $categories
         ]);
     }
