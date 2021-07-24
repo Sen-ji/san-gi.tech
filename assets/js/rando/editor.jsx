@@ -21,7 +21,8 @@ class Editor extends  React.Component{
     }
     render() {
         return <div><button onClick={this.handleSave.bind(this)}>Save!</button><EditorJs instanceRef={instance => this.editorInstance = instance}
-            data={{
+
+                                                                                         data={{
             time: 1556098174501,
             blocks: [
                 {
