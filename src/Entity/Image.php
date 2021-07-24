@@ -65,7 +65,8 @@ class Image
      */
     #[Assert\NotNull(groups: ['media_object_create'])]
     public  $fil = null;
-
+    #[Groups(['media_object:read'])]
+    public $file = null;
 
     /**
      * @ORM\Column(nullable=true)

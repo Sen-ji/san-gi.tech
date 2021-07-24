@@ -23,18 +23,10 @@ class CreateImageController extends AbstractController
 
         $mediaObject = new Image();
         $mediaObject->fil = $uploadedFile;
+        $mediaObject->file = ["url" => 'https://127.0.0.1:8000/img/'.$uploadedFile->getClientOriginalName()];
 
         return $mediaObject;
     }
-    #[Route('/uploadImage', name: 'uploadImage',methods: ['post'])]
-    public function uploadImage(Request $request){
-        $f=  $request->files->get('image');
-        $f->move('./');
 
-        return $this->render('blog/rando/test.html.twig', [
-            "request" => $request->files->get('image')
-
-        ]);
-    }
 
 }

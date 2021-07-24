@@ -40,10 +40,14 @@ class Editor extends  React.Component{
                     }
                 },
                 {
-                    type: "header",
-                    data: {
-                        text: "Key features",
-                        level: 3
+                    "id": "aV3f9KtD56",
+                    "type": "image",
+                    "data": {
+                        "file": "{ \"url\" : \"https://127.0.0.1:8000/img/index.png\"}",
+                        "caption": "",
+                        "withBorder": false,
+                        "stretched": false,
+                        "withBackground": false
                     }
                 },
                 {
