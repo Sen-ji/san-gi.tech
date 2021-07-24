@@ -9,7 +9,7 @@ import FieldGuesser from "@api-platform/admin/lib/FieldGuesser";
 import ResourceGuesser from "@api-platform/admin/lib/ResourceGuesser";
 
 import { CategorieList,CategoryCreate,CategoryEdit,ArticlesList,ArticlesCreate,ArticlesEdit,CommentairesList,CommentairesCreate,CommentairesEdit,
-    TestList,TestCreate,TestEdit,UserList} from './posts';
+    TestList,TestCreate,TestEdit,UserList,ImageList,} from './posts';
 import { HydraAdmin, fetchHydra, hydraDataProvider } from "@api-platform/admin";
 import { parseHydraDocumentation } from "@api-platform/api-doc-parser";
 
@@ -28,14 +28,16 @@ class Base extends React.Component{
     }
     render(){
         return <div className=" ">
-                <HydraAdmin
-                    entrypoint={ entrypoint }>
-                    <ResourceGuesser name={"tests"} list={TestList} />
-                    <ResourceGuesser name={"articles"} list={ArticlesList} />
-                    <ResourceGuesser name={"categories"} list={CategorieList} />
-                    <ResourceGuesser name={"commentaires"} list={CommentairesList} />
-                    <ResourceGuesser name={"users"} list={UserList} />
-                </HydraAdmin>
+
+            <HydraAdmin
+                entrypoint={ entrypoint }>
+                <ResourceGuesser name={"tests"} list={TestList} />
+                <ResourceGuesser name={"articles"} list={ArticlesList} edit={ArticlesEdit} />
+                <ResourceGuesser name={"categories"} list={CategorieList} />
+                <ResourceGuesser name={"commentaires"} list={CommentairesList} />
+                <ResourceGuesser name={"users"} list={UserList} />
+                <ResourceGuesser name={"images"} list={ImageList} />
+            </HydraAdmin>
 
             </div>
 

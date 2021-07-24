@@ -17,12 +17,13 @@ use Vich\UploaderBundle\Mapping\Annotation as Vich;
  * @Vich\Uploadable
  */
 #[ApiResource(
-    formats: ['json' => [ 'application/json' ]],
+
     normalizationContext: ['groups' => ['media_object:read']],
     itemOperations: ['get'],
     collectionOperations: [
     'get',
     'post' => [
+        'formats'=>  ['json' => [ 'application/json' ]],
         'controller' => CreateImageController::class,
         'deserialize' => false,
         'validation_groups' => ['Default', 'media_object_create'],

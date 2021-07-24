@@ -3,7 +3,10 @@ import { List, Datagrid, Edit, Create, SimpleForm, DateField, TextField, EditBut
 import BookIcon from '@material-ui/icons/Book';
 import ListGuesser from "@api-platform/admin/lib/ListGuesser";
 import FieldGuesser from "@api-platform/admin/lib/FieldGuesser";
+import EditGuesser from "@api-platform/admin/lib/EditGuesser";
+import InputGuesser from "@api-platform/admin/lib/InputGuesser";
 export const PostIcon = BookIcon;
+import RichTextInput from 'ra-input-rich-text';
 
 export const CategorieList = props => (
     <ListGuesser {...props}>
@@ -58,17 +61,17 @@ export const ArticlesList = props => (
 );
 
 
-// export const ArticlesEdit = (props) => (
-//     <Edit title={<PostTitle />} {...props}>
-//         <SimpleForm>
-//             <TextInput source="id" />
-//             <TextInput source="type" />
-//             <TextInput source="name" />
-//             <TextInput source="enfants" />
-//             <TextInput source="articles" />
-//         </SimpleForm>
-//     </Edit>
-// );
+export const ArticlesEdit = props => (
+    <EditGuesser {...props}>
+        <InputGuesser source={"name"} />
+        <InputGuesser source={"author"} />
+        <InputGuesser source={"editDate"} />
+        <InputGuesser source={"catégorie"} />
+        <InputGuesser source={"commentaires"} />
+        <InputGuesser source={"publicationDate"} />
+        <RichTextInput   source={"content"} />
+    </EditGuesser>
+);
 //
 // export const ArticlesCreate = (props) => (
 //     <Create title="Create a Post" {...props}>
@@ -148,5 +151,12 @@ export const UserList = props => (
         <FieldGuesser source={"commentaires"} />
         <FieldGuesser source={"username"} />
         <FieldGuesser source={"salt"} />
+    </ListGuesser>
+);
+
+export const ImageList = props => (
+    <ListGuesser {...props}>
+            <FieldGuesser source={"success"} />
+            <FieldGuesser source={"file"} />
     </ListGuesser>
 );
