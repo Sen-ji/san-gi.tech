@@ -1,5 +1,5 @@
 import * as React from "react";
-import { List, Datagrid, Edit, Create, SimpleForm, DateField, TextField, EditButton, TextInput, DateInput } from 'react-admin';
+import { List, Datagrid, Edit, Create, SimpleForm, DateField, EditButton, TextInput, DateInput } from 'react-admin';
 import BookIcon from '@material-ui/icons/Book';
 import ListGuesser from "@api-platform/admin/lib/ListGuesser";
 import FieldGuesser from "@api-platform/admin/lib/FieldGuesser";
@@ -7,6 +7,111 @@ import EditGuesser from "@api-platform/admin/lib/EditGuesser";
 import InputGuesser from "@api-platform/admin/lib/InputGuesser";
 export const PostIcon = BookIcon;
 import RichTextInput from 'ra-input-rich-text';
+import { Field } from 'react-final-form';
+import { useInput, required,Toolbar,
+    SaveButton,
+    DeleteButton,
+ } from 'react-admin';
+import MenuItem from "@material-ui/core/MenuItem";
+import Select from "@material-ui/core/Select";
+
+import TextField from '@material-ui/core/TextField';
+
+import EditorJs from "react-editor-js";
+import {EDITOR_JS_TOOLS} from "./rando/tools";
+class Editor extends  React.Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+            data: this.props.data,
+        }
+        this.timer = null
+    }
+    componentDidMount() {
+        let editor = this.editorInstance // access editor-js
+        console.log("acess")
+        let saveData = null
+        function test(){
+            editor.save().then((value) => {
+                document.getElementById("inputinput").value = JSON.stringify(value)
+                saveData = value;
+            })
+        }
+        this.timer = window.setInterval(function(){
+            test()
+        }, 3000);
+    }
+    componentWillUnmount() {
+        window.clearInterval(this.timer)
+    }
+
+    render() {
+        return <div>
+            <EditorJs
+                instanceRef={instance => this.editorInstance = instance}
+                data={JSON.parse(this.props.data)} tools={EDITOR_JS_TOOLS} /></div>
+    }
+}
+
+export const BoundedTextField = props => {
+    const {
+        input: { name, onChange, ...rest },
+        meta: { touched, error },
+        isRequired
+    } = useInput(props);
+    const handleChange = (event) => {
+        console.log(event.target.value);
+    };
+    return (
+        <TextField
+            name={name}
+            label={props.label}
+            onChange={onChange}
+            error={!!(touched && error)}
+            helperText={touched && error}
+            required={isRequired}
+            {...rest}
+        />
+    );
+};
+export const LatLngInput = props => {
+    const {source, ...rest} = props;
+
+    const handleChange = (event) => {
+        props.record.content= event.target.value+""
+        document.getElementById("test58989").value = event.target.value
+    };
+    const test = () =>{
+        console.log("test")
+    }
+    return (
+        <span>
+            <SexInput
+                source="content"
+            />
+             <input id="inputinput" source="Content" onChange={handleChange}/>
+             <Editor data={props.record.content}/>
+        </span>
+    );
+};
+export const SexInput = props => {
+    const {
+        input,
+        meta: { touched, error }
+    } = useInput(props);
+
+
+    return (
+        <div>
+        <TextInput
+            id="test58989"
+            label="content"
+            {...input}
+        />
+
+        </div>
+    );
+};
 
 export const CategorieList = props => (
     <ListGuesser {...props}>
@@ -52,7 +157,6 @@ export const ArticlesList = props => (
         <FieldGuesser source={"name"} />
         <FieldGuesser source={"author"} />
         <FieldGuesser source={"PublicationDate"} />
-        <FieldGuesser source={"content"} />
         <FieldGuesser source={"editDate"} />
         <FieldGuesser source={"catégorie"} />
         <FieldGuesser source={"commentaires"} />
@@ -60,8 +164,7 @@ export const ArticlesList = props => (
     </ListGuesser>
 );
 
-
-export const ArticlesEdit = props => (
+export const ArticlesEdit2 = props => (
     <EditGuesser {...props}>
         <InputGuesser source={"name"} />
         <InputGuesser source={"author"} />
@@ -69,9 +172,26 @@ export const ArticlesEdit = props => (
         <InputGuesser source={"catégorie"} />
         <InputGuesser source={"commentaires"} />
         <InputGuesser source={"publicationDate"} />
-        <RichTextInput   source={"content"} />
+        <LatLngInput />
     </EditGuesser>
 );
+export class ArticlesEdit extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return <EditGuesser {...(this.props)}>
+            <InputGuesser source={"name"} />
+            <InputGuesser source={"author"} />
+            <InputGuesser source={"editDate"} />
+            <InputGuesser source={"catégorie"} />
+            <InputGuesser source={"commentaires"} />
+            <InputGuesser source={"publicationDate"} />
+            <LatLngInput  />
+        </EditGuesser>
+    }
+}
 //
 // export const ArticlesCreate = (props) => (
 //     <Create title="Create a Post" {...props}>

@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
+import { alpha,createTheme  } from '@material-ui/core/styles';
 
 import  {Admin, Resource, ListGuesser} from  'react-admin';
 import restProvider from 'ra-data-simple-rest';
@@ -12,6 +13,8 @@ import { CategorieList,CategoryCreate,CategoryEdit,ArticlesList,ArticlesCreate,A
     TestList,TestCreate,TestEdit,UserList,ImageList,} from './posts';
 import { HydraAdmin, fetchHydra, hydraDataProvider } from "@api-platform/admin";
 import { parseHydraDocumentation } from "@api-platform/api-doc-parser";
+
+
 
 const entrypoint = 'https://127.0.0.1:8000/api';
 

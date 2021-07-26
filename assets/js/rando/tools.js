@@ -13,9 +13,19 @@ import CheckList from '@editorjs/checklist'
 import Delimiter from '@editorjs/delimiter'
 import InlineCode from '@editorjs/inline-code'
 import SimpleImage from '@editorjs/simple-image'
+import Underline from '@editorjs/underline'
 
 export const EDITOR_JS_TOOLS = {
-    embed: Embed,
+    embed:{
+        class:Embed,
+        inlineToolbar: true,
+        config:{
+            services:{
+                youtube:true,
+                coub: true
+            }
+        }
+    },
     paragraph: Paragraph,
     list: List,
     warning: Warning,
@@ -37,5 +47,6 @@ export const EDITOR_JS_TOOLS = {
     checklist: CheckList,
     delimiter: Delimiter,
     inlineCode: InlineCode,
-    simpleImage: SimpleImage
+    simpleImage: SimpleImage,
+    underline:Underline
 }

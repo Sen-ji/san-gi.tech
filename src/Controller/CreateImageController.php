@@ -23,7 +23,7 @@ class CreateImageController extends AbstractController
 
         $mediaObject = new Image();
         $mediaObject->fil = $uploadedFile;
-        $mediaObject->file = ["url" => '/img/'.$uploadedFile->getClientOriginalName()];
+        $mediaObject->file = ["url" => '/img/'.$uploadedFile->getClientOriginalName(),"test" =>"test"];
 
         return $mediaObject;
     }
