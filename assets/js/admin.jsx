@@ -16,7 +16,7 @@ import { parseHydraDocumentation } from "@api-platform/api-doc-parser";
 
 
 
-const entrypoint = 'https://127.0.0.1:8000/api';
+const entrypoint = '/api';
 
 
 const dataProvider = hydraDataProvider(

@@ -24,8 +24,9 @@
   <component name="ChangeListManager">
     <list default="true" id="983f784e-ae66-4101-9007-b88d84e7eebe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CategoriesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/categories/article.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/categories/article.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/admin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/admin.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +207,7 @@
       <workItem from="1626439972689" duration="28324000" />
       <workItem from="1626731947614" duration="6042000" />
       <workItem from="1626738060092" duration="92651000" />
-      <workItem from="1627236707422" duration="35107000" />
+      <workItem from="1627236707422" duration="36178000" />
     </task>
     <servers />
   </component>
@@ -246,11 +247,11 @@
       <screen x="-1440" y="0" width="1440" height="860" />
     </state>
     <state x="-1440" y="0" width="1456" height="732" key="dock-window-2/0.0.1920.1040/-1440.0.1440.860/1920.0.1920.1040@0.0.1920.1040" timestamp="1627308686444" />
-    <state x="615" y="40" width="1299" height="592" key="find.popup" timestamp="1627229368450">
+    <state x="615" y="40" width="1299" height="592" key="find.popup" timestamp="1627345953468">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-979" y="33" width="975" height="534" key="find.popup/0.0.1920.1040/-1440.0.1440.860/1920.0.1920.1040@-1440.0.1440.860" timestamp="1627077950900" />
-    <state x="615" y="40" width="1299" height="592" key="find.popup/0.0.1920.1040/-1440.0.1440.860/1920.0.1920.1040@0.0.1920.1040" timestamp="1627229368450" />
+    <state x="615" y="40" width="1299" height="592" key="find.popup/0.0.1920.1040/-1440.0.1440.860/1920.0.1920.1040@0.0.1920.1040" timestamp="1627345953468" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1625938296832">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
