@@ -89,7 +89,7 @@ export const LatLngInput = props => {
             <SexInput
                 source="content"
             />
-             <input id="inputinput" source="Content" onChange={handleChange}/>
+            <textarea id="inputinput" source="Content" onChange={handleChange}/>
              <Editor data={props.record.content}/>
         </span>
     );
