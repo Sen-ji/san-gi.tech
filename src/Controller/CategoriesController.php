@@ -29,7 +29,8 @@ class CategoriesController extends AbstractController
         return $this->render('categories/article.html.twig', [
             "cat" => $cat,
             "article" =>$art,
-            'categories' => $categories
+            'categories' => $categories,
+            'content'=>json_decode($art->getContent())
         ]);
     }
 }

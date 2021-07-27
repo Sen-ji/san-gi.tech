@@ -14,8 +14,44 @@
         </div>
         <div class="container pt-5">
             <p> Publié dans  {{ article.catégorie.name }} le {{ article.PublicationDate|format_datetime(locale='en') }}</p>
-            <p>{{ article.content }}</p>
+            {% for block in content.blocks %}
+                {% if block.type =="header"  %}
+                    {% if block.data.level ==1%}
+                        <h1>{{ block.data.text }}</h1>
+                    {% elseif block.data.level ==2%}
+                        <h2>{{ block.data.text }}</h2>
+                    {% elseif block.data.level ==3%}
+                        <h3>{{ block.data.text }}</h3>
+                    {% elseif block.data.level ==4%}
+                        <h4>{{ block.data.text }}</h4>
+                    {% elseif block.data.level ==5%}
+                        <h5>{{ block.data.text }}</h5>
+                    {% elseif block.data.level ==6%}
+                        <h6>{{ block.data.text }}</h6>
+                    {% endif %}
+                {% elseif block.type =="paragraph"%}
+                    <p>{{ block.data.text }}</p>
+                {% elseif block.type =="list"%}
+                    <ul>
+                        {% for li in  block.data.items %}
+                        <li>{{ li}}</li>
+                        {% endfor %}
 
+                    </ul>
+                {% elseif block.type =="delimiter"%}
+                    <div class="m-5"></div>
+                {% elseif block.type =="raw"%}
+                    <code class="bg-dark">{{ block.data.html}}</code>
+                {% elseif block.type =="warning"%}
+                    <div class="alert alert-danger" role="alert">
+                        {{block.data.title}}
+                    </div>
+                    <p>{{ block.data.message }}</p>
+                {% elseif block.type =="image"%}
+                    <h3>{{ block.data.caption }}</h3>
+                    <img src="{{ block.data.file.url }}">
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
     {% include 'blog/rando/footer.html.twig' %}
