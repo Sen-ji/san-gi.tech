@@ -54,6 +54,7 @@
                     </div>
                 {% endif %}
             {% endfor %}
+            <post-comment data-post="{{article.id}}" data-type="article" data-user="{{ app.user ? app.user.id :0 }}"></post-comment>
         </div>
     </div>
     {% include 'blog/rando/footer.html.twig' %}

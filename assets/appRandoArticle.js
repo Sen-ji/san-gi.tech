@@ -13,6 +13,7 @@ import { Tooltip, Toast, Popover } from 'bootstrap';
 
 import './bootstrap.js';
 import './js/rando/nav.jsx'
+import './js/rando/comment'
 
 
 import bsCustomFileInput from 'bs-custom-file-input';

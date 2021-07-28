@@ -210,7 +210,7 @@ export const CommentairesList = props => (
         <FieldGuesser source={"publicationDate"} />
         <FieldGuesser source={"editDate"} />
         <FieldGuesser source={"article"} />
-    </ListGuesser>
+        <FieldGuesser source={"content"} />    </ListGuesser>
 );
 
 // export const CommentairesEdit = (props) => (
